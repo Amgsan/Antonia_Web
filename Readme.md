@@ -37,3 +37,5 @@
         Entrar en GitHub
         Clonar el repositorio: copiar el nombre del repositorio y ejecutarlo en cmd
             git clone <nombrerepositorio>.git
+Para que no haga copias de algún fichero crear el fichero .gitignore
+    En internet https://www.gitignore.io ayuda a crear este fichero según el tipo de desarrollo
