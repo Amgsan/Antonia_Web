@@ -2,7 +2,7 @@
 
 ## Configuración del entorno ##
 
-- Navegador: Chrome, firefox... 
+- Navegador: Chrome, firefox... (usando F12)
 - Editor de código: Visual Studio Code
     https://code.visualstudio.com
 - Node JS / npm
@@ -32,6 +32,8 @@
         Seguir las instrucciones de GitHub para sincronizar los repositorios (2 comandos)
             git remote add origin https://github.com/Amgsan/<repositorio>.git
             git push -u origin master
-
+        Se puede publicar (subir al repositorio) o sincronizar (sube y baja)
     2. De remoto a local    
-
+        Entrar en GitHub
+        Clonar el repositorio: copiar el nombre del repositorio y ejecutarlo en cmd
+            git clone <nombrerepositorio>.git
