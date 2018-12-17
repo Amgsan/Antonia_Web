@@ -33,6 +33,10 @@
             git remote add origin https://github.com/Amgsan/<repositorio>.git
             git push -u origin master
         Se puede publicar (subir al repositorio) o sincronizar (sube y baja)
+        También se puede hacer el commit desde la linea de comandos, pero en 2 pasos:
+            git status (para saber lo que hay pendiente de subir)
+            git add .
+            git commit -m <nombredelcommit>
     2. De remoto a local    
         Entrar en GitHub
         Clonar el repositorio: copiar el nombre del repositorio y ejecutarlo en cmd
