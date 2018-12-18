@@ -30,7 +30,7 @@
                 git log
         Crear un repositorio vacío en GitHub, preferiblemente con el mismo nombre
         Seguir las instrucciones de GitHub para sincronizar los repositorios (2 comandos)
-            git remote add origin https://github.com/Amgsan/<repositorio>.git
+            git remote add origin https://github.com/<repositorio>.git
             git push -u origin master
         Se puede publicar (subir al repositorio) o sincronizar (sube y baja)
         También se puede hacer el commit desde la linea de comandos, pero en 2 pasos:
@@ -39,7 +39,7 @@
             git commit -m <nombredelcommit>
     2. De remoto a local    
         Entrar en GitHub
-        Clonar el repositorio: copiar el nombre del repositorio y ejecutarlo en cmd
+        Clonar el repositorio: copiar el nombre del repositorio y ejecutarlo en cmd. Se ejecuta desde el directorio padre.
             git clone <nombrerepositorio>.git
 Para que no haga copias de algún fichero crear el fichero .gitignore
     En internet https://www.gitignore.io ayuda a crear este fichero según el tipo de desarrollo
