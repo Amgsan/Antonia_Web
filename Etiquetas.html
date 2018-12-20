@@ -11,6 +11,10 @@
     <!-- etiqueta de compatibilidad de microsoft, para que utilice siempre la última versión disponible -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/etiquetas.css">
+    <!-- para resetear los estilos por defecto del navegador
+        <link rel="stylesheet" href="./css/reset.css"> 
+    -->
     <!-- <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="./js/app.js"></script> -->
@@ -38,10 +42,18 @@
 
     <header>
         <h1>Clasificación de las etiquetas HTML</h1>
-        <nav>Aquí va el menú</nav>
+        <nav>
+            <ol>
+                <li><a href="#secciones">Secciones</a></li>
+                <li><a href="#agrupaciones">Agrupaciones</a></li>
+                <li><a href="#textos">Textos</a></li>
+                <li><a href="#otros">Otros</a></li>
+                <li><a href="#estandarhtml">Estándar HTML5</a></li>
+            </ol>      
+        </nav>
     </header>
     <p>Esta página web recoge la clasificación de etiquetas según el estándar HTML 5.3</p>
-    <section>
+    <section id="secciones">
         <header>
             <h2>Secciones</h2>
             <p>Sectioning</p>
@@ -82,7 +94,7 @@
             </p>
         </section>
     </section>
-    <section>
+    <section id="agrupaciones">
         <header>
             <h2>Agrupaciones</h2>
             <p>Grouping</p>
@@ -94,20 +106,20 @@
             <li>ol</li>
         </ul>
     </section>
-    <section>
+    <section id="textos">
         <header>
             <h2>Textos y Edits</h2>
             <p>Text-Level semantics & Edits</p> 
         </header>
         <p>Aquí se indicarán las etiquetas de textos y categoría Edits </p>
     </section>
-    <section>
+    <section id="otros">
         <header>
            <h2>Otras etiquetas</h2> 
         </header>
         <p>Aquí se indicarán el resto de etiquetas</p>
     </section>
-    <aside>
+    <aside id="estandarhtml">
         <header>
           <h2>El estándar HTML 5.3</h2>  
         </header>
