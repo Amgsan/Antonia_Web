@@ -1,7 +1,27 @@
+body {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+body>header, footer {
+    background-color: brown;
+    color: bisque;
+    padding: 1rem;
+}
+
 nav ol, nav ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+nav li{
+    display: inline-block;
+    }
 nav a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    display: block;
+    padding: 0.3rem 1rem;
+    /* border: 1px solid; */
 }
+
