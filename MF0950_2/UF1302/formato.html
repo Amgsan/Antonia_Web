@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas que dan formato al texto</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y Javascript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="title" content="Etiquetas para formatear texto">
+    <meta name="author" content="Antonia">
+    <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }   
+        h1,h2,h3,h4,h5,h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        .nota {
+                background-color:#ffffcc; 
+                border-left: 6px solid #ffeb3b; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+        .nota code {
+            background-color: #eee;
+        }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 15px;
+            color:brown;
+            }
+        td, th {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #dddddd;
+        }
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formato HTML</h1>
+    <p>El formato del texto, es el marcado que se aplica a un texto para añadirle datos de forma</p>
+    <p>Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido</p>
+    <hr>
+    <h2>Encabezados de texto</h2>
+    <p>Las máquinas de búsqueda utilizan los encabezados para indexar la estructura y el contenido de las páginas web</p>
+    <p>Los usuarios hojean las páginas por sus encabezados. Es importante utilizar los encabezados para mostrar la estructura del documento</p>
+    <p>Los encabezamientos <code>&lt;h1&gt;</code> deben utilizarse para encabezados principales, seguidos de encabezamientos <code>&lt;h2&gt;</code>, después <code>&lt;h3&gt;</code>; y así sucesivamente</p> 
+    <p class="nota"><b>Nota</b>: utilizar encabezados HTML solo para encabezados. No usar los encabezados para texto GRANDE o negrita.</p>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+            <td><code>&lt;h1&gt;</code></td>
+            <td>Describe un encabezado de tipo 1</td>
+            <td><h1>Esto es un encabezado de tipo 1</h1></td>
+            <td><code>&lt;h1&gt;</code>Esto es un encabezado de tipo 1<code>&lt;/h1&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;h2&gt;</code></td>
+            <td>Describe un encabezado de tipo 2</td>
+            <td><h2>Esto es un encabezado de tipo 2</h2></td>
+            <td><code>&lt;h2&gt;</code>Esto es un encabezado de tipo 1<code>&lt;/h2&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;h3&gt;</code></td>
+            <td>Describe un encabezado de tipo 3</td>
+            <td><h3>Esto es un encabezado de tipo 3</h3></td>
+            <td><code>&lt;h3&gt;</code>Esto es un encabezado de tipo 3<code>&lt;/h3&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;h4&gt;</code></td>
+            <td>Describe un encabezado de tipo 4</td>
+            <td><h4>Esto es un encabezado de tipo 4</h4></td>
+            <td><code>&lt;h4&gt;</code>Esto es un encabezado de tipo 4<code>&lt;/h4&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;h5&gt;</code></td>
+            <td>Describe un encabezado de tipo 5</td>
+            <td><h5>Esto es un encabezado de tipo 5</h5></td>
+            <td><code>&lt;h5&gt;</code>Esto es un encabezado de tipo 5<code>&lt;/h5&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;h6&gt;</code></td>
+            <td>Describe un encabezado de tipo 6</td>
+            <td><h6>Esto es un encabezado de tipo 6</h6></td>
+            <td><code>&lt;h6&gt;</code>Esto es un encabezado de tipo 6<code>&lt;/h6&gt;</code></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Formateo de elementos HTML</h2>
+    <p>HTML tiene elementos especiales para definir texto con un siginificado especial.
+    <p>HTML utiliza elementos como <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code> para formatear el texto como negrita o cursiva.</p>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+            <td><code>&lt;b&gt;</code></td>
+            <td>Describe texto en negrita</td>
+            <td><b>Esto es un texto en negrita</b></td>
+            <td><code>&lt;b&gt;</code>Esto es un texto en negrita<code>&lt;/b&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;strong&gt;</code></td>
+            <td>Describe texto importante o palabra clave</td>
+            <td><strong>Esto es un texto importante</strong></td>
+            <td><code>&lt;strong&gt;</code>Esto es un texto importante<code>&lt;/strong&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;i&gt;</code></td>
+            <td>Describe texto en cursiva</td>
+            <td><i>Esto es un texto en cursiva</i></td>
+            <td><code>&lt;i&gt;</code>Esto es un texto en cursiva<code>&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;em&gt;</code></td>
+            <td>Describe texto enfatizado</td>
+            <td><em>Esto es un texto enfatizado</em></td>
+            <td><code>&lt;em&gt;</code>Esto es un texto enfatizado<code>&lt;/em&gt;</code></td>
+        </tr>       
+        <tr>
+            <td><code>&lt;mark&gt;</code></td>
+            <td>Describe texto marcado</td>
+            <td><mark>Esto es un texto marcado</mark></td>
+            <td><code>&lt;mark&gt;</code>Esto es un texto marcado<code>&lt;/mark&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;small&gt;</code></td>
+            <td>Describe texto pequeño</td>
+            <td>Esto es un texto <small>más pequeño</small></td>
+            <td><code>&lt;small&gt;</code>Esto es un texto pequeño<code>&lt;/small&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;del&gt;</code></td>
+            <td>Describe texto borrado</td>
+            <td>Esto es un texto <del>borrado</del></td>
+            <td><code>&lt;del&gt;</code>Esto es un texto borrado<code>&lt;/del&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;ins&gt;</code></td>
+            <td>Describe texto añadido</td>
+            <td>Esto es un texto <ins>añadido</ins></td>
+            <td><code>&lt;ins&gt;</code>Esto es un texto añadido<code>&lt;/ins&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;sub&gt;</code></td>
+            <td>Describe texto subíndice</td>
+            <td>Esto es un texto <sub>subíndice</sub></td>
+            <td><code>&lt;sub&gt;</code>Esto es un texto subíndice<code>&lt;/sub&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;sup&gt;</code></td>
+            <td>Describe texto superior</td>
+            <td>Esto es un texto <sup>superior</sup></td>
+            <td><code>&lt;sup&gt;</code>Esto es un texto superior<code>&lt;/sup&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;s&gt;</code></td>
+            <td>Describe texto tachado</td>
+            <td>Esto es un texto <s>tachado</s></td>
+            <td><code>&lt;s&gt;</code>Esto es un texto tachado<code>&lt;/s&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;u&gt;</code></td>
+            <td>Describe texto subrayado</td>
+            <td>Esto es un texto <u>subrayado</u></td>
+            <td><code>&lt;u&gt;</code>Esto es un texto subrayado<code>&lt;/u&gt;</code></td>
+        </tr>
+    </table>
+    <br>
+    <p class="nota"><b>Nota</b>: Los navegadores sacan <code>&lt;strong&gt;</code> como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code> como <code>&lt;i&gt;</code>. Sin embargo, hay diferencia en el significado de esas etiquetas: <code>&lt;b&gt;</code> y <code>&lt;i&gt;</code> definen texto en negrita y en cursiva, pero <code>&lt;strong&gt;</code> y <code>&lt;em&gt;</code> significa que el texto es <strong>"importante"</strong>.</p>
+    <h2><small>Ejemplo de uso</small></h2>
+    <p><mark><b>Texto en negrita y resaltado</b></mark></p>
+    <hr>
+    <p><b><u>Teoría</u></b> de la relatividad: <em>E=MC<sup>2</sup></em>
+    <br>
+    <i>Molécula</i> del <strong>agua:</strong> H<sub>2</sub>O</p>
+    <hr>
+    <p><strong>HTML</strong> (<i><b>H</b>yper<b>T</b>ext</i> <i><b>M</b>arkup</i> <i><b>L</b>anguage)</i>
+    <br>
+    <strong>W3C</strong> (<i><b>W</b>orld</i> <i><b>W</b>ide</i> <i><b>W</b>eb</i> <i><b>C</b>onsortium)</i></p>
+</body>
+</html>

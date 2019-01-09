@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Curso diseño páginas web</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y Javascript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="title" content="Confección y publicación de páginas web">
+        <meta name="author" content="Antonia">
+        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 80%;
+                margin: 0 auto;
+            }   
+            h1,h2,h3,h4,h5,h6 {
+                font-family: Arial, Helvetica, sans-serif;
+            } 
+            .nota {
+                background-color:#ffffcc; 
+                border-left: 6px solid #ffeb3b; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+            table {
+                width:80%;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+            }
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            .caja {
+                border: 1px solid #cccccc;
+                background-color: #f1f1f1;
+                padding: 3px;
+                margin: 10px;
+            }
+            .subcaja {
+                border: 1px solid #cccccc;
+                background-color: #ffffff;
+                padding: 3px;
+                margin: 10px;
+            }
+            hr {
+                border: 1px solid #eee;
+                margin: 5px 20px;
+            }
+            .etiquetashtml {
+                background-color: #f1f1f1;
+                border:1px solid #cccccc;
+                padding: 16px;
+                font-size: 24px;
+            }
+            code {
+                background-color: #f1f1f1;
+                color: crimson;
+                padding-left: 4pX;
+                padding-right: 4px;
+                font-size: 110%;
+            }
+            code span {
+                color: mediumblue;
+            }
+            code span span {
+                color:brown;
+            }
+            code span span span{
+                color: black;
+            }
+            .ejemplo {
+                /* border: 1px solid #f1f1f1; */
+                background-color: #f1f1f1;
+                padding: 8px 16px;
+                margin: 20px 0;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) ; 
+            }
+            .code {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #ffffff;
+                padding: 8px 12px;
+                border-left: 4px solid #4Caf50;
+            }
+            .code code {
+                background-color: white;
+            }
+            dl dt {
+                margin-left: 35px;
+            }
+        </style>
+        <script>   </script>
+        <link rel="icon" href="imagen.png" type="image/png">
+        <link rel="icon" href="imagen.gif" type="image/gif">
+        <link rel="icon" href="imagen.ico" type="image/vnd.microsoft.ico">
+        <link href="css/estilos.css" rel="stylesheet">
+        <script src="js/funciones.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <h1>HTML Introducción</h1>
+        <hr>
+        <h2>¿Que es HTML?</h2>
+        <p></p>HTML es el lenguaje estándar de marcado para crear páginas web.</p>
+        <ul>
+            <li>HTML significa Hyper Text Markup Language</li>
+            <li>HTML describe la estructura de las páginas web utilizando marcas</li>
+            <li>Los elementos de HTML elements son los bloques que construyen las páginas HTML</li>
+            <li>Los elementos HTML se representan con etiquetas</li>
+            <li>Las etiquetas de HTML son trozos de contenido como "heading", "paragraph", "table", etc</li>
+            <li>Los navegadores no muestran las etiquetas HTML, pero las utilizan para renderizar el contenido de la página</li>
+        </ul>
+        <hr>
+        <h2>Estructura básica de un documento HTML</h2>
+        
+        <div class="ejemplo">
+            <h3>Ejemplo</h3>
+            <div class="code">
+                <code>
+                    <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br>
+                    <span>&lt;<span>html&nbsp;<span>="es-ES"</span></span>&gt;</span><br>
+                    <span>&lt;<span>head</span>&gt;</span><br>
+                    <span>&lt;<span>title</span>&gt;</span><span style="color:black">Page Title</span><span>&lt;<span>/title</span>&gt;</span><br>
+                    <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
+                    <span>&lt;<span>/head</span>&gt;</span><br>
+                    <span>&lt;<span>body</span>&gt;</span><br>
+                    <span>&lt;<span>h1</span>&gt;</span><span style="color:black">My First Heading</span><span>&lt;<span>/h1</span>&gt;</span><br>
+                    <span>&lt;<span>p</span>&gt;</span><span style="color:black">My first paragraph.</span><span>&lt;<span>/p</span>&gt;</span><br>
+                    <span>&lt;<span>/body</span>&gt;</span><br>
+                    <span>&lt;<span>/html</span>&gt;</span><br>
+                </code>
+            </div>
+        </div>
+        <h2>Explicación de las etiquetas básicas</h2>
+        <ol>
+            <li>La declaración <code>&lt;!DOCTYPE html&gt;<span></7span></code> define que el documento es HTML5</li>
+            <li>El elemento <code>&lt;html&gt;</code> es el elemento raiz de una página HTML</li>
+            <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento y va dentro de la etiqueta <html></html></li>
+            <li>El elemento <code>&lt;head&gt;</code> contiene meta información sobre el documento</li>
+            <li>El elemento <code>&lt;title&gt;</code> define el titulo del documento</li>
+            <li>El elemento <code>&lt;meta charset="UTF-8"&gt;</code> define el juego de caracteres</li>
+            <li>El elemento <code>&lt;body&gt;</code> contiene el contenido visible de la página</li>
+            <li>El elemento <code>&lt;h1&gt;</code> define una cabecera principal</li>
+            <li>El elemento <code>&lt;p&gt;</code> define un párrafo</li>
+        </ol>
+        <hr>
+        <h2>Etiquetas HTML</h2>
+        <p>Las etiquetas HTML son los nombres de los elementos contenidos entre paréntesis angulares:</p>
+        <div class="etiquetashtml">
+            <p><b>&lt;tagname&gt;</b>aquí va el contenido...<b>&lt;/tagname&gt;</b></p>
+        </div>
+        <!-- Lista de definición -->
+        <dl>
+            <dt><b>Etiquetas HTML</b></dt>
+            <dd>normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd>
+            <dt><b>Las etiquetas HTML</b></dt>
+            <dd>tienen una etiqueta de inicio y una de fin</dd>
+            <dt><b>La etiqueta de fin</b></dt>
+            <dd>se escribe como una etiqueta de incio pero precedida de una barra inclinada antes del nombre de la etiqueta</dd>
+        </dl>
+        <div class="nota">
+                <p><b>Consejo: </b>La etiqueta de inicio también se llama etiqueta de apertura, y la de final etiqueta de cierre.</p>
+        </div>
+        <div>
+            <h2>Navegadores Web</h2>
+            <p>El propósito de un navegador (Chrome, IE, Firefox, Safari) es leer documentos HTML y pintarlos.   <br>
+            Los navegadores no pintan las etiquetas HTML, pero las utiliza para determinar como pintar el documento:</p>
+            <img src="img/navegador_chrome.png" alt="imagen navegador chrome" width="635" height="361">
+        </div>
+        <hr>
+        <div>
+            <h2>Versiones HTML Versions</h2>
+            <p>Hay muchas versiones de HTML:</p>
+            <table>
+                <tr>
+                    <th>Versión</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>HTML 2.0</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>HTML 3.2</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>HTML 4.01</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>XHTML</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>2014</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <h2>Estructura de una Página HTML</h2>
+        <p>A continuación se muestra una visualización de una estructura de página</p>
+        <div class="caja">
+            <p>&lt;html&gt;</p>
+            <div class="caja">
+                <p>&lt;head&gt;</p>
+                <div class="caja">
+                    <p>&lt;title&gt;Page title&lt;/title&gt;</p>        
+                </div>
+                <p>&lt;/head&gt;</p>
+            </div>
+            <div class="caja">
+                <p>&lt;body&gt;</p>
+                <div class="subcaja">
+                    <div class="subcaja">
+                        <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+                    </div>
+                    <div class="subcaja">
+                        <p>&lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+                    </div>
+                    <div class="subcaja">
+                        <p>&lt;p&gt;This is another paragraph&lt;/p&gt;</p>
+                    </div>
+                </div>
+                <p>&lt;/body&gt;</p>
+            </div>
+            <p>&lt;/html&gt;</p>
+        </div> 
+        <div class="nota">
+            <p>Nota: sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (la zona blanca de arriba) sale en el navegador </p>
+        </div>
+        <hr>
+
+    </body>
+</html>

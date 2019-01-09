@@ -17,7 +17,7 @@
 ### Configuración de git
 - Definir usuario / correo
     git config --global user.name <nombreusuario>
-    git config --globa user.email <emailusuario>
+    git config --global user.email <emailusuario>
 - Comprobar la configuración
     git config -l --global
 - Crear un repositorio: 2 formas
