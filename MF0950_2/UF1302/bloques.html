@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas que dan formato al texto</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y Javascript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="title" content="Etiquetas para formatear texto">
+    <meta name="author" content="Antonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    
+    <link rel="icon" href="img/favicon.ico" type="image/icon">
+    
+   <!-- <base href="file:///C:/Users/MAÑANAS.GET23-08/Documents/Antonia_Web/MF0950_2/UF1302/" target="_blank">    -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 90%;
+            margin: 0 auto;
+        }   
+        h1,h2,h3,h4,h5,h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        .nota {
+                background-color:#ffffcc; 
+                border-left: 6px solid #ffeb3b; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+        p code {
+            background-color: #eee;
+			color:red;
+        }
+		table code {
+			color:black;
+		}
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 15px;
+            color:brown;
+            }
+        td, th {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+		.blockquote {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.code {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			background-color: #ffffff;
+			padding: 8px 12px;
+			border-left: 4px solid #4Caf50;
+			color: black;
+		}
+		.cite {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			background-color: #ffffff;
+			padding: 8px 12px;
+			border-left: 4px solid #2196f3;
+			color: black;
+		}
+	}
+    </style>
+</head>
+<body>
+    <h1>Bloques HTML</h1>
+    <hr>
+	<h2>Etiquetas que citan el texto</h2>
+    <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
+    <p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, una película, un programa de televisión o una canción, no el nombre de una persona.</p>
+    <p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
+    <p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Ggenera automáticamente comillas alrededor del contenido.</p>
+    <p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo <code>title</code> para la definición / explicación del término dentro. Se usa para el navegador.</p>
+   <br>
+	<table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+            <td><code>&lt;abbr&gt;</code></td>
+            <td>Define una abreviatura</td>
+            <td><p>Esto es un texto abreviado: <abbr title="Hyper Text Markup Language">HTML</abbr></p></td>
+            <td><code>&lt;abbr title=</code>"Hyper Text Markup Language"<code>&gt;</code>HTML<code>&lt;abbr&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;q&gt;</code></td>
+            <td>Define una breve cita</td>
+            <td><q>Esto es una breve cita</q></td>
+            <td><code>&lt;q&gt;</code>Esto es una breve cita<code>&lt;/q&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;blockquote&gt;</code></td>
+            <td>Define una cita de otra fuente</td>
+            <td><blockquote class="blockquote">Este texto es de otra fuente</blockquote></td>
+            <td><code>&lt;blockquote&gt;</code>Esto texto es de otra fuente<code>&lt;/blockquote&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;cite&gt;</code></td>
+            <td>Define el título de una obra</td>
+            <td><cite>Este texto es un texto citado</cite></td>
+            <td><code>&lt;cite&gt;</code>Este texto es un texto citado<code>&lt;/cite&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;dfn&gt;</code></td>
+            <td>Define un término</td>
+            <td><dfn title="Hyper Text Markup Language">Esto es un término HTML</dfn></td>
+            <td>Esto es un término <code>&lt;dfn title=</code>"Hyper Text Markup Language"<code>&gt;</code>HTML<code>&lt;/dfn&gt;</code></td>
+		</tr>
+    </table>
+    <br>
+	<div style="background-color: #EDEDED; padding: 25px;">
+		<h3>Ejemplo de uso</h3>
+		<div class="cite">
+			<p><strong>EL LENGUAJE <dfn><abbr title="Hyper Text Markup Language">HTML</abbr></dfn></strong></p>
+			<blockquote>
+				<p>Como <strong>Tim Berners-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la Web</cite>: <q>Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto ya la luz. La tarea que me correspondía era hacer que casaran</q>.</p>
+			</blockquote>
+		</div>
+		<div class="code">
+			<p><strong>Código <dfn><abbr title="Hyper Text Markup Language">HTML</abbr></dfn></strong></p>
+			<blockquote><small><p style="line-height: 20px;">&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Como &lt;strong&gt;Tim Berners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto ya la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;.&lt;/p&gt;&lt;/blockquote&gt;</p></small></blockquote>
+		</div>
+	</div>
+	<br>
+	<div class="nota">
+	  <p><b>Nota</b>Por defecto, <code>&lt;blockquote&gt;</code>; incluye un margen izquierdo cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad margin-left de CSS.</p>
+	</div>
+	<hr>
+	<h2>Elementos que agrupan el texto</h2>  
+	<p>El <code>&lt;div&gt;</code> es un elemento que actúa como un contenedor de otros elementos. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales. Cuando se utiliza junto con CSS, puede ser utilizado para dar estilo a un bloque de contenido.</p>
+	<p>El elemento <code>&lt;span&gt;</code> a menudo se utiza como contenedor para agrupar un texto en línea. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales para dar estilos CSS a un trozo de texto.</p>
+	<br>
+	<table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>Define una división del contenido en bloque</td>
+            <td><div style="border: 1px solid #A755A1;">Esto es un div</div></td>
+            <td><code>&lt;div&gt;</code>Esto es un div<code>&lt;/div&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;span&gt;</code></td>
+            <td>Define una sección del documento en línea</td>
+            <td>Esto es un <span style="color: aqua; border: 1px solid green;">span</span> dentro del texto</td>
+            <td>Esto es un <code>&lt;span&gt;</code>span<code>&lt;/span&gt;</code>dentro del texto</td>
+        </tr>
+    </table>
+    <br>
+	<div style="border: 1px solid red; overflow: hidden; margin: auto 0; width: 100%">
+		<div style="width: 30%; float: left; border: 1px solid blue; margin:10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
+		<div style="width: 30%; float: left; border: 1px solid blue; margin:10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
+		<div style="width: 30%; float: left; border: 1px solid blue; margin:10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
+	</div>
+	<br>
+    <div class="nota">
+	  <p><b>Nota</b> Un elemento en bloque siempre empieza en una nueva línea y toma todo el ancho disponible.</p>
+	</div>
+	<hr>
+
+
+</body>
+</html>
