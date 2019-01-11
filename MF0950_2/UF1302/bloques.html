@@ -91,10 +91,21 @@
 			background-color: black;
 			border-radius: 3px;
 			color: white;
-			padding: 5px;
-			
+			padding: 0.2em 0.4em;	
 		}
-	}
+		samp {
+			font-size: 130%;
+		}
+		#divpadre {
+			overflow: hidden; 
+/*			border: 1px solid red; */
+			margin: 0 auto; 
+			width: 80%;
+		}
+		.divhijo {
+			float: left;
+			width: 33.33%;
+		}
     </style>
 </head>
 <body>
@@ -245,7 +256,7 @@
 		<tr>
 			<td><code>&lt;var&gt;</code></td>
 			<td>Define una variable aritmética.</td>
-			<td>Einstein escribió <var>E = mc2</var></p></td>
+			<td>Einstein escribió <var>E = mc2</var></td>
 			<td>Einstein escribió <code>&lt;var&gt;</code>E = mc2<code>&lt;/var&gt;</code></td>
 		</tr>
 	</table>
@@ -255,25 +266,29 @@
 	</div>
 	<hr>
 	
-	<div style="overflow: hidden; border: 1px solid red; margin: 0 auto; width: 80%">
-		<div style="float: left; width: 33.33%; background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
-		<div style="float: left; width: 33.33%; background-color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
-		<div style="float: left; width: 33.33%; background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div id="divpadre">
+		<div class="divhijo">
+			<p><strong>Errores HTML</strong></p>
+			<sam>Error ´404 not found´</sam><br>
+			<sam>Error ´400 bad request´</sam><br>
+			<sam>Error ´401 Unauthorized´</sam><br>
+			<sam>Error ´403 Forbidden´</sam><br>
+		</div>
+		<div class="divhijo">
+			<p><strong>Comandos básicos</strong></p>
+			<kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">S</kbd> para guardar<br>
+			<kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">C</kbd> para copiar<br>
+			<kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">V</kbd> para pegar<br>
+			<kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">X</kbd> para cortar<br>
+		</div>
+		<div class="divhijo">
+			<p><strong>Fórmulas históricas</strong></p>
+			<var>a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup></var> Pitágoras<br>
+			<var>E=mc<sup>2</sup></var> Einstein<br>
+			<var>F=G[m1 x m2]/r<sup>2</sup></var> Newton<br>
+			<var>iħ (∂/∂t).ψ=Hψ</var> Schrodinger<br>			
+		</div>
 	</div>
 	<br>
-	
-	<div style="border: 1px solid red; overflow: hidden; margin: 0 auto; width: 90%">
-		<div style="width: 33.33%; float: left;background-color: lightblue;"><div style="padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div></div>
-		<div style="width: 33.33%; float:left;background-color: antiquewhite;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
-		<div style="width: 33.33%; float: left;background-color: lightcoral">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida suscipit semper. Fusce ut risus non ante porta auctor vitae ut erat. Suspendisse ut est sit amet ligula consequat rhoncus sed vel purus.</div>
-	</div>
-	<br>
-
-
-	
-		
-<hr>
-
-
 </body>
 </html>
