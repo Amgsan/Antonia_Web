@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas que dan formato al texto</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y Javascript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="title" content="Etiquetas para formatear texto">
+    <meta name="author" content="Antonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    
+    <link rel="icon" href="img/favicon.ico" type="image/icon">
+    
+   <!-- <base href="file:///C:/Users/MAÑANAS.GET23-08/Documents/Antonia_Web/MF0950_2/UF1302/" target="_blank">    -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }   
+        h1,h2,h3,h4,h5,h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+		table code {
+			color:black;
+		}
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 15px;
+            color:brown;
+            }
+        td, th {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+	<h2>Etiquetas colgroup y col</h2>
+	<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para dar formato. La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna de un <code>&lt;colgroup&gt;</code>. Es útil para aplicar estilos a columnas completas sin tener que repetir los estilos pra cada celda..</p>
+	<table>
+		<caption>Encabezado superior</caption>
+		<colgroup>
+			<col span="2" style="background-color: aqua">
+			<col style="background-color: brown">
+		</colgroup>
+		<tr>
+			<th scope="col">Título</th>
+			<th scope="col">Título</th>
+			<th scope="col">Título</th>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</body>
+</html>
