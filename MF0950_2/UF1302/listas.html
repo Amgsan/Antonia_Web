@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas que dan formato al texto</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y Javascript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="title" content="Etiquetas para formatear texto">
+    <meta name="author" content="Antonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    
+    <link rel="icon" href="img/favicon.ico" type="image/icon">
+    
+   <!-- <base href="file:///C:/Users/MAÑANAS.GET23-08/Documents/Antonia_Web/MF0950_2/UF1302/" target="_blank">    -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }   
+        h1,h2,h3,h4,h5,h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        .nota {
+                background-color:#ffffcc; 
+                border-left: 6px solid #ffeb3b; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+        p code {
+            background-color: #eee;
+			color:red;
+        }
+		table code {
+			color:black;
+		}
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        #tabla1 {
+            width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+        }
+        #tabla1 th{
+            font-size: 15px;
+            color:brown;
+            }
+        #tabla1 td, #tabla1 th {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        #tabla1 tr:nth-child(even) {
+            background-color: #eee;
+        }
+		.tablademo1 {
+			width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+			border-collapse: collapse;
+		}
+		.tablademo1 th {
+            text-align: center;
+			color: blue;
+            padding: 8px;
+            border: 1px solid #dddddd;
+			width: 25%;
+        }
+		.tablademo1 td {
+            text-align: left;
+			padding: 8px;
+			border: 1px solid #dddddd;
+			width: 25%;
+			vertical-align: top;
+        }
+		.blockquote {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.code {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			background-color: #ffffff;
+			padding: 8px 12px;
+			border-left: 4px solid #4Caf50;
+			color: black;
+		}
+		.cite {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			background-color: #ffffff;
+			padding: 8px 12px;
+			border-left: 4px solid #2196f3;
+			color: black;
+		}
+		#divspan span {
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 87.5%;
+			color: #212529;
+			background-color: azure;
+			border-radius: 3px;
+		}
+		.kbd {
+			background-color: black;
+			border-radius: 3px;
+			color: white;
+			padding: 0.2em 0.4em;	
+		}
+		samp {
+			font-size: 130%;
+		}
+		#divpadre {
+			overflow: hidden; 
+/*			border: 1px solid red; */
+			margin: 0 auto; 
+			width: 80%;
+		}
+		.divhijo {
+			float: left;
+			width: 33.33%;
+		}
+    </style>
+</head>
+<body>
+<h1>Listas HTML</h1>
+
+<h2>Tipos de listas</h2>
+<p>HTML ofrece varios mecanismos para especificar listas de información. Todas las listas deben contener uno o más objetos de lista. Las listas pueden contener: información no ordenada, información ordenada, información sobre definiciones.</p>
+<p>Los tipos de listas en HTML son los siguientes:</p>
+<table class="tablademo1">
+   <tr>
+   		<th>Lista ordenada</th>
+   		<th>Lista desordenada</th>
+   		<th>Lista de descripción</th>
+   		<th>Lista anidada</th>
+   </tr>
+    <tr>
+		<td>
+			<p>Tecnologías web</p>
+			<ol type="I">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+		</td>
+		<td>
+			<p>Tecnologías internet</p>
+			<ul style="list-style-type: circle">
+				<li>HTTP</li>
+				<li>URL</li>
+				<li>WWW</li>
+			</ul>
+		</td>
+		<td>
+			<p>Lenguajes de marcas</p>
+			<dl>
+				<dt>HTML</dt>
+					<dd>Lenguaje de marcado de hipertexto</dd>
+					<dd>Hypertext Markup Language</dd>
+				<dt>XML</dt>
+					<dd>Lenguaje de Marcado Extensible</dd>
+					<dd>Extensible Markup Language</dd>
+				<dt>XHTML</dt>
+					<dd>HTML expresado como XML válido</dd>
+					<dd>eXtensible HyperText Markup Language</dd>
+				
+			</dl>
+		</td>		
+		<td>
+			<ul>
+				<li>linea 1</li>
+				<li>linea 2:
+					<ol start="3">
+						<li>opcion 1</li>
+						<li>opcion 2</li>
+						<li>opcion 3</li>
+						<li>opcion 4</li>
+					</ol>
+				</li>
+				<li>linea 3</li>
+			</ul>
+   		</td>		
+   </tr>
+</table>
+<br>
+<h2>Listas ordenadas</h2>
+<table class="tablademo1">
+   <tr>
+   		<th>Lista ordenada</th>
+   		<th>Lista ordenada</th>
+   		<th>Lista ordenada</th>
+   		<th>Lista ordenada</th>
+   </tr>
+    <tr>
+		<td>
+			<p>Tecnologías WEB</p>
+			<ol type="a">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+		</td>
+		<td>
+			<p>Tecnologías WEB</p>
+			<ol type="1" reversed>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+		</td>
+		<td>
+			<p>Tecnologías WEB</p>
+			<ol type="I">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+		</td>		
+		<td>
+			<p>Tecnologías WEB</p>
+			<ol type="A">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+   		</td>		
+   </tr>
+</table>
+<br>
+<h2>Listas desordenadas</h2>
+<table class="tablademo1">
+   <tr>
+   		<th>Lista desordenada</th>
+   		<th>Lista desordenada</th>
+   		<th>Lista desordenada</th>
+   		<th>Lista desordenada</th>
+   </tr>
+    <tr>
+		<td>
+			<p>Con circulos</p>
+			<ul style="list-style-type: circle">
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+			</ul>
+		</td>
+		<td>
+			<p>Con favicons</p>
+			<ul style="list-style-image: url(img/favicon.ico)">
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+			</ul>
+		</td>
+		<td>
+			<p>Con discos</p>
+			<ul style="list-style-type: disc">
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+			</ul>
+		</td>		
+		<td>
+			<p>Con letras</p>
+			<ul style="list-style-type: lower-alpha">
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+				<li>fav</li>
+			</ul>
+   		</td>		
+   </tr>
+</table>
+<br>
+<h2>Lista de descripción</h2>
+<table class="tablademo1">
+   <tr>
+   		<th>Lista de descripción</th>
+   		<th>Lista de descripción</th>
+   		<th>Lista de descripción</th>
+   		<th>Lista de descripción</th>
+   </tr>
+    <tr>
+		<td>
+			<p>Lenguajes de marcas</p>
+			<dl>
+				<dt>HTML</dt>
+					<dd>Hypertext Markup Language</dd>
+					<dd>Lenguaje de marcado de hipertexto</dd>
+				<dt>XML</dt>
+					<dd>Extensible Markup Language</dd>
+				<dt>XHTML</dt>
+					<dd>eXtensible HyperText Markup Language</dd>				
+			</dl>
+		</td>
+		<td>
+			<p>Tecnologías web</p>
+			<dl>
+				<dt>HTTP</dt>
+					<dd>Hypertext Transfer Protocol</dd>
+				<dt>CSS</dt>
+					<dd>Cascade Style Sheet</dd>
+				<dt>Javascript</dt>
+			</dl>
+		</td>
+		<td>
+			<p>Lenguajes de marcas</p>
+			<dl>
+				<dt>HTML</dt>
+					<dd>Hypertext Markup Language</dd>
+				<dt>XML</dt>
+					<dd>Extensible Markup Language</dd>
+				<dt>XHTML</dt>
+					<dd>eXtensible HyperText Markup Language</dd>
+			</dl>
+		</td>		
+		<td>
+			<p>Lenguajes de marcas</p>
+			<dl>
+				<dt>HTML</dt>
+					<dd>Hypertext Markup Language</dd>
+				<dt>XML</dt>
+					<dd>Extensible Markup Language</dd>
+				<dt>XHTML</dt>
+					<dd>eXtensible HyperText Markup Language</dd>				
+			</dl>
+   		</td>		
+   </tr>
+</table>
+<br>
+<h2>Lista anidada</h2>
+<table class="tablademo1">
+   <tr>
+   		<th>Lista anidada</th>
+   		<th>Lista anidada</th>
+   		<th>Lista anidada</th>
+   		<th>Lista anidada</th>
+   </tr>
+    <tr>
+		<td>
+			<ul>
+				<li>linea 1</li>
+				<li>linea 2:
+					<ol start="2">
+						<li>opcion 1</li>
+						<li>opcion 2</li>
+						<li>opcion 3</li>
+						<li>opcion 4</li>
+					</ol>
+				</li>
+				<li>linea 3</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li>linea 1</li>
+				<li>linea 2:
+					<ol start="2">
+						<li>opcion 1</li>
+						<li>opcion 2</li>
+						<li>opcion 3</li>
+						<li>opcion 4</li>
+					</ol>
+				</li>
+				<li>linea 3</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li>linea 1</li>
+				<li>linea 2:
+					<ol start="2">
+						<li>opcion 1</li>
+						<li>opcion 2</li>
+						<li>opcion 3</li>
+						<li>opcion 4</li>
+					</ol>
+				</li>
+				<li>linea 3</li>
+			</ul>
+		</td>		
+		<td>
+			<ul>
+				<li>linea 1</li>
+				<li>linea 2:
+					<ol start="2">
+						<li>opcion 1</li>
+						<li>opcion 2</li>
+						<li>opcion 3</li>
+						<li>opcion 4</li>
+					</ol>
+				</li>
+				<li>linea 3</li>
+			</ul>
+   		</td>		
+   </tr>
+</table>
+
+</body>
+</html>
