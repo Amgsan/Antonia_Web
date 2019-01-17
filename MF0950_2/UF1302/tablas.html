@@ -15,7 +15,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }   
         h1,h2,h3,h4,h5,h6 {
@@ -120,9 +120,24 @@
     </style>
 </head>
 <body>
-    <h1>Tablas HTML</h1>
+    <h1 id="ind0">Tablas HTML</h1>
     <hr>
-	<h2>Etiquetas que definen una tabla</h2>
+	<a href="index.html">Indice</a> | 
+	<a href="introduccion.html">Introducción</a> |
+	<a href="formato.html">Formatos</a> |
+	<a href="bloques.html">Bloques</a> |
+	<a href="listas.html">Listas</a> |     
+	<a href="tablas.html">Tablas</a>            
+	<hr> 
+	<ul>
+		<li><a href="#ind1">Etiquetas que definen una tabla</a></li>
+		<li><a href="#ind2">El atributo Scope</a></li>
+		<li><a href="#ind3">Atributos colspan y rowspan</a></li>
+		<li><a href="#ind4">Etiquetas colgroup y col</a></li>
+		<li><a href="#ind5">Agrupación por filas</a></li>
+	</ul>
+	<hr> 
+	<h2 id="ind1">Etiquetas que definen una tabla</h2>
 	<p>Una tabla HTML se define con la etiqueta <code>&lt;table&gt;</code> tag.</p>
 	<p>Cada tabla se define con la etiqueta <code>&lt;tr&gt;</code>. La cabecera se define con <code>&lt;th&gt;</code>. Por defecto, los encabezados son centrados y en negrita. Una celda se define con la etiqueta <code>&lt;td&gt;</code></p>
    	<br>
@@ -173,7 +188,9 @@
         </tr>
     </table>
     <br>
-    <h2>El atributo Scope</h2>
+    <a href="#ind0" style="color: blueviolet">Subir</a>        	              
+    <br>
+    <h2 id="ind2">El atributo Scope</h2>
     <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. Solo afecta a las etiquetas <code>&lt;th&gt;</code></p>
     <p>El atributo scope especifica si una celda de cabecera es de fila, columna o de grupo de columnas o filas. No tiene efectos visuales en los navegadores, pero se puede utlizar para los lectores de pantalla.</p>
 <table class="tablademo1">
@@ -260,8 +277,10 @@
 		</td>
   </tr>
 </table>
+<br>
+<a href="#ind0" style="color: blueviolet">Subir</a>        	              
 	<br>
-    <h2>Atributos colspan y rowspan</h2>
+    <h2 id="ind3">Atributos colspan y rowspan</h2>
     <p>El atributo colspan define el número de columnas que una celda debe ocupar. El atributo rowspan especifica el número de filas que una celda debe ocupar.</p>
 	<table class="tablademo1">
 	<tr>
@@ -337,8 +356,11 @@
 		</td>
 	</tr>
 	</table>
+	<br>
+	<a href="#ind0" style="color: blueviolet">Subir</a>   
+	<br>     	              
 	<hr>
-	<h2>Etiquetas colgroup y col</h2>
+	<h2 id="ind4">Etiquetas colgroup y col</h2>
 	<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para dar formato. La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna de un <code>&lt;colgroup&gt;</code>. Es útil para aplicar estilos a columnas completas sin tener que repetir los estilos pra cada celda..</p>
 	<table class="tablademo1 tablademo2">
 	<tr>
@@ -418,7 +440,9 @@
 	</tr>
 	</table>
 	<br>
-	<h2>Agrupación por filas</h2>
+	<a href="#ind0" style="color: blueviolet">Subir</a>        	              
+	<br>
+	<h2 id="ind5">Agrupación por filas</h2>
 	<p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Esto son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a las filas que representan un pie o resumen; y tbody, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
 	<table class="tablademo1 tablademo2">
     <tr>
@@ -599,6 +623,7 @@
 	</td>
 </tr>
 </table>
-	
+<br>
+<a href="#ind0" style="color: blueviolet">Subir</a>        	              	
 </body>
 </html>

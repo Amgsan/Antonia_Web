@@ -15,7 +15,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }   
         h1,h2,h3,h4,h5,h6 {
@@ -106,9 +106,22 @@
     </style>
 </head>
 <body>
-    <h1>Bloques HTML</h1>
+    <h1 id="ind0">Bloques HTML</h1>
     <hr>
-	<h2>Etiquetas que citan el texto</h2>
+	<a href="index.html">Indice</a> | 
+	<a href="introduccion.html">Introducción</a> |
+	<a href="formato.html">Formatos</a> |
+	<a href="bloques.html">Bloques</a> |
+	<a href="listas.html">Listas</a> |     
+	<a href="tablas.html">Tablas</a>            
+	<hr>  
+   <ul>
+		<li><a href="#ind1">Etiquetas que citan el texto</a></li>
+		<li><a href="#ind2">Elementos que agrupan el texto</a></li>
+		<li><a href="#ind3">Etiquetas de código de computadora</a></li>
+	</ul>
+	<hr>	  
+	<h2 id="ind1">Etiquetas que citan el texto</h2>
     <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
     <p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, una película, un programa de televisión o una canción, no el nombre de una persona.</p>
     <p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
@@ -171,8 +184,9 @@
 	<div class="nota">
 	  <p><b>Nota</b>: Por defecto, <code>&lt;blockquote&gt;</code>; incluye un margen izquierdo cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad margin-left de CSS.</p>
 	</div>
+    <a href="#ind0" style="color: blueviolet">Subir</a>        	
 	<hr>
-	<h2>Elementos que agrupan el texto</h2>  
+	<h2 id="ind2">Elementos que agrupan el texto</h2>  
 	<p>El <code>&lt;div&gt;</code> es un elemento que actúa como un contenedor de otros elementos. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales. Cuando se utiliza junto con CSS, puede ser utilizado para dar estilo a un bloque de contenido.</p>
 	<p>El elemento <code>&lt;span&gt;</code> a menudo se utiza como contenedor para agrupar un texto en línea. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales para dar estilos CSS a un trozo de texto.</p>
 	<br>
@@ -217,8 +231,9 @@
 	  <p><b>Nota</b> Un elemento en bloque siempre empieza en una nueva línea y toma todo el ancho disponible. Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
 	</div>
 	<br>
+    <a href="#ind0" style="color: blueviolet">Subir</a>        	
 	<hr>
-	<h2>Etiquetas de código de computadora</h2>
+	<h2 id="ind3">Etiquetas de código de computadora</h2>
 	<ul>
 		<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
 		<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada del usuario.</li>
@@ -287,5 +302,6 @@
 		</div>
 	</div>
 	<br>
+    <a href="#ind0" style="color: blueviolet">Subir</a>        	
 </body>
 </html>

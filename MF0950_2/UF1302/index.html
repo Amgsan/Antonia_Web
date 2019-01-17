@@ -7,11 +7,11 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="Antonia">
-        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">
+<!--        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">-->
         <style>
             body {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
             }   
             h1,h2,h3,h4,h5,h6 {
@@ -109,143 +109,114 @@
         
     </head>
     <body>
-        <h1>HTML Introducción</h1>
+     	<div style="overflow: hidden; background-color: azure;">
+			<div style="width: 135px; float: left;">
+				<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+			</div>
+			<div style="float: left;">
+				<h2>Lenguaje de marcas</h2>
+				<a href="index.html">Indice</a> | 
+				<a href="introduccion.html">Introducción</a> |
+				<a href="formato.html">Formatos</a> |
+				<a href="bloques.html">Bloques</a> |
+				<a href="listas.html">Listas</a> |     
+				<a href="tablas.html">Tablas</a>         			
+			</div>
+       	</div>
+       	<hr>   
+       	<br>   	
+        <h1><img src="img/HTML5_Logo_32.png" alt="html5">Índice</h1>
         <hr>
-        <h2>¿Que es HTML?</h2>
-        <p></p>HTML es el lenguaje estándar de marcado para crear páginas web.</p>
-        <ul>
-            <li>HTML significa Hyper Text Markup Language</li>
-            <li>HTML describe la estructura de las páginas web utilizando marcas</li>
-            <li>Los elementos de HTML elements son los bloques que construyen las páginas HTML</li>
-            <li>Los elementos HTML se representan con etiquetas</li>
-            <li>Las etiquetas de HTML son trozos de contenido como "heading", "paragraph", "table", etc</li>
-            <li>Los navegadores no muestran las etiquetas HTML, pero las utilizan para renderizar el contenido de la página</li>
-        </ul>
-        <hr>
-        <h2>Estructura básica de un documento HTML</h2>
-        
-        <div class="ejemplo">
-            <h3>Ejemplo</h3>
-            <div class="code">
-                <code>
-                    <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br>
-                    <span>&lt;<span>html&nbsp;<span>="es-ES"</span></span>&gt;</span><br>
-                    <span>&lt;<span>head</span>&gt;</span><br>
-                    <span>&lt;<span>title</span>&gt;</span><span style="color:black">Page Title</span><span>&lt;<span>/title</span>&gt;</span><br>
-                    <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
-                    <span>&lt;<span>/head</span>&gt;</span><br>
-                    <span>&lt;<span>body</span>&gt;</span><br>
-                    <span>&lt;<span>h1</span>&gt;</span><span style="color:black">My First Heading</span><span>&lt;<span>/h1</span>&gt;</span><br>
-                    <span>&lt;<span>p</span>&gt;</span><span style="color:black">My first paragraph.</span><span>&lt;<span>/p</span>&gt;</span><br>
-                    <span>&lt;<span>/body</span>&gt;</span><br>
-                    <span>&lt;<span>/html</span>&gt;</span><br>
-                </code>
-            </div>
+        <div style="margin-left: 10%; margin-right: 10%">
+			<div style="overflow: hidden; padding: 30px 40px;">
+				<div style="float: left; background-color: azure; padding: 20px; margin: 15px;  border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666; width:250px; height: 450px;">
+					<a href="introduccion.html"><img src="img/sencha.png" alt="Página de introducción" width="242" height="172" title="Página de introducción"></a>
+					<p style="text-align: center;"><b>Página de introducción</b></p>
+					<ul>
+					<li><a href="introduccion.html#ind1">¿Que es HTML?</a></li>
+					<li><a href="introduccion.html#ind2">Estructura básica de un documento HTML</a></li>
+					<li><a href="#introduccion.htmlind3">Explicación de las etiquetas básicas</a></li>
+					<li><a href="introduccion.html#ind4">Etiquetas HTML</a></li>
+					<li><a href="introduccion.html#ind5">Navegadores Web</a></li>
+					<li><a href="introduccion.html#ind6">Versiones HTML</a></li>	       		       	
+					<li><a href="introduccion.html#ind7">Estructura de una Página HTML</a></li>
+					</ul>
+				</div>
+				<div style="float: left; background-color: azure; padding: 20px;  margin: 15px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="formato.html"><img src="img/modernizr.jpg" alt="Página de formato" width="242" height="172" title="Página de formato"></a>
+					<p style="text-align: center;"><b>Página de formato</b></p>					
+				</div>
+				<div style="float: left; background-color: azure; padding: 20px;  margin: 15px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="bloques.html"><img src="img/phonegap.png" alt="Página de bloques" width="242" height="172" title="Página de bloques"></a>
+					<p style="text-align: center;"><b>Página de bloques</b></p>
+				</div>  
+		   </div>	
         </div>
-        <h2>Explicación de las etiquetas básicas</h2>
-        <ol>
-            <li>La declaración <code>&lt;!DOCTYPE html&gt;<span></7span></code> define que el documento es HTML5</li>
-            <li>El elemento <code>&lt;html&gt;</code> es el elemento raiz de una página HTML</li>
-            <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento y va dentro de la etiqueta <html></html></li>
-            <li>El elemento <code>&lt;head&gt;</code> contiene meta información sobre el documento</li>
-            <li>El elemento <code>&lt;title&gt;</code> define el titulo del documento</li>
-            <li>El elemento <code>&lt;meta charset="UTF-8"&gt;</code> define el juego de caracteres</li>
-            <li>El elemento <code>&lt;body&gt;</code> contiene el contenido visible de la página</li>
-            <li>El elemento <code>&lt;h1&gt;</code> define una cabecera principal</li>
-            <li>El elemento <code>&lt;p&gt;</code> define un párrafo</li>
-        </ol>
-        <hr>
-        <h2>Etiquetas HTML</h2>
-        <p>Las etiquetas HTML son los nombres de los elementos contenidos entre paréntesis angulares:</p>
-        <div class="etiquetashtml">
-            <p><b>&lt;tagname&gt;</b>aquí va el contenido...<b>&lt;/tagname&gt;</b></p>
-        </div>
-        <!-- Lista de definición -->
-        <dl>
-            <dt><b>Etiquetas HTML</b></dt>
-            <dd>normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd>
-            <dt><b>Las etiquetas HTML</b></dt>
-            <dd>tienen una etiqueta de inicio y una de fin</dd>
-            <dt><b>La etiqueta de fin</b></dt>
-            <dd>se escribe como una etiqueta de incio pero precedida de una barra inclinada antes del nombre de la etiqueta</dd>
-        </dl>
-        <div class="nota">
-                <p><b>Consejo: </b>La etiqueta de inicio también se llama etiqueta de apertura, y la de final etiqueta de cierre.</p>
-        </div>
-        <div>
-            <h2>Navegadores Web</h2>
-            <p>El propósito de un navegador (Chrome, IE, Firefox, Safari) es leer documentos HTML y pintarlos.   <br>
-            Los navegadores no pintan las etiquetas HTML, pero las utiliza para determinar como pintar el documento:</p>
-            <img src="img/navegador_chrome.png" alt="imagen navegador chrome" width="635" height="361">
-        </div>
-        <hr>
-        <div>
-            <h2>Versiones HTML Versions</h2>
-            <p>Hay muchas versiones de HTML:</p>
-            <table>
-                <tr>
-                    <th>Versión</th>
-                    <th>Año</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>1991</td>
-                </tr>
-                <tr>
-                    <td>HTML 2.0</td>
-                    <td>1995</td>
-                </tr>
-                <tr>
-                    <td>HTML 3.2</td>
-                    <td>1997</td>
-                </tr>
-                <tr>
-                    <td>HTML 4.01</td>
-                    <td>1999</td>
-                </tr>
-                <tr>
-                    <td>XHTML</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>HTML5</td>
-                    <td>2014</td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <h2>Estructura de una Página HTML</h2>
-        <p>A continuación se muestra una visualización de una estructura de página</p>
-        <div class="caja">
-            <p>&lt;html&gt;</p>
-            <div class="caja">
-                <p>&lt;head&gt;</p>
-                <div class="caja">
-                    <p>&lt;title&gt;Page title&lt;/title&gt;</p>        
-                </div>
-                <p>&lt;/head&gt;</p>
-            </div>
-            <div class="caja">
-                <p>&lt;body&gt;</p>
-                <div class="subcaja">
-                    <div class="subcaja">
-                        <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
-                    </div>
-                    <div class="subcaja">
-                        <p>&lt;p&gt;This is a paragraph&lt;/p&gt;</p>
-                    </div>
-                    <div class="subcaja">
-                        <p>&lt;p&gt;This is another paragraph&lt;/p&gt;</p>
-                    </div>
-                </div>
-                <p>&lt;/body&gt;</p>
-            </div>
-            <p>&lt;/html&gt;</p>
-        </div> 
-        <div class="nota">
-            <p>Nota: sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (la zona blanca de arriba) sale en el navegador </p>
-        </div>
-        <hr>
-
+       <div style="margin-left: 10%; margin-right: 10%">
+       		<div style="overflow: hidden; padding: 30px 40px;">
+				<div style="float: left; background-color: azure; padding: 20px; margin: 15px;  border: 2px solid #4E89AF;">        
+				<ul>
+					<li><a href="introduccion.html#ind1">¿Que es HTML?</a></li>
+					<li><a href="introduccion.html#ind2">Estructura básica de un documento HTML</a></li>
+					<li><a href="#introduccion.htmlind3">Explicación de las etiquetas básicas</a></li>
+					<li><a href="introduccion.html#ind4">Etiquetas HTML</a></li>
+					<li><a href="introduccion.html#ind5">Navegadores Web</a></li>
+					<li><a href="introduccion.html#ind6">Versiones HTML</a></li>	       		       	
+					<li><a href="introduccion.html#ind7">Estructura de una Página HTML</a></li>
+				</ul>
+				</div>
+				<div style="float: left; background-color: azure; padding: 20px; margin: 15px;  border: 2px solid #4E89AF;">        
+				<ul>
+					<li><a href="formato.html#ind1">Encabezados de texto</a></li>
+					<li><a href="formato.html#ind2">Formateo de elementos HTML</a></li>
+					<li><a href="formato.html#ind3">Etiquetas que separan el texto</a></li>
+					<li><a href="formato.html#ind4">Ejemplo de uso</a></li>
+				</ul>
+				</div>
+				<div style="float: left; background-color: azure; padding: 20px; margin: 15px;  border: 2px solid #4E89AF;">        
+				<ul>
+					<li><a href="bloques.html#ind1">Etiquetas que citan el texto</a></li>
+					<li><a href="bloques.html#ind2">Elementos que agrupan el texto</a></li>
+					<li><a href="bloques.html#ind3">Etiquetas de código de computadora</a></li>
+				</ul>			
+				</div>
+		   </div>	
+		</div>
+		
+		<div style="margin-left: 10%; margin-right: 10%">
+			<div style="overflow: hidden;padding: 30px 40px;">
+				<div style="float: left; background-color: azure; padding: 20px;  margin: 15px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="listas.html"><img src="img/sencha-touch.jpg" alt="Página de listas" width="242" height="172" title="Página de listas"></a>
+					<p style="text-align: center;"><b>Página de listas</b></p>
+				</div>
+				<div style="float: left; background-color: azure; padding: 20px;  margin: 15px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="tablas.html"><img src="img/html5boilerplate.png" alt="Página de tablas" width="242" height="172" title="Página de tablas"></a>
+					<p style="text-align: center;"><b>Página de tablas</b></p>
+				</div>
+		   </div>   
+		</div>
+      <hr>
+      
+      
+      
+      
+      <div style="margin-left: 5%; margin-right: 5%;">
+			<div style="overflow: hidden; padding: 10px;">
+				<div style="float: left; background-color: azure; padding: 5px; margin: 5px;  border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="introduccion.html"><img src="img/sencha.png" alt="Página de introducción" width="342" height="272" title="Página de introducción"></a>
+					<p style="text-align: center;"><b>Página de introducción</b></p>
+				</div>
+				<div style="float: left; background-color: azure; padding: 5px;  margin: 5px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="formato.html"><img src="img/modernizr.jpg" alt="Página de formato" width="342" height="272" title="Página de formato"></a>
+					<p style="text-align: center;"><b>Página de formato</b></p>
+				</div>
+				<div style="float: left; background-color: azure; padding: 5px;  margin: 5px; border: 2px solid #4E89AF; box-shadow:  2px 2px 10px #666">
+					<a href="bloques.html"><img src="img/phonegap.png" alt="Página de bloques" width="342" height="272" title="Página de bloques"></a>
+					<p style="text-align: center;"><b>Página de bloques</b></p>
+				</div>  
+		   </div>	
+        </div>      
+      
+       <hr>
     </body>
 </html>

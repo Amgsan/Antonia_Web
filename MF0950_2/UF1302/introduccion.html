@@ -7,11 +7,11 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="Antonia">
-        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">
+<!--        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">-->
         <style>
             body {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
             }   
             h1,h2,h3,h4,h5,h6 {
@@ -109,10 +109,27 @@
         
     </head>
     <body>
-        <h1>HTML Introducción</h1>
+        <h1 id="ind0">HTML Introducción</h1>
         <hr>
-        <h2>¿Que es HTML?</h2>
-        <p></p>HTML es el lenguaje estándar de marcado para crear páginas web.</p>
+        <a href="index.html">Indice</a> | 
+		<a href="introduccion.html">Introducción</a> |
+        <a href="formato.html">Formatos</a> |
+	    <a href="bloques.html">Bloques</a> |
+	    <a href="listas.html">Listas</a> |     
+	    <a href="tablas.html">Tablas</a>            
+        <hr>
+        <ul>
+			<li><a href="#ind1">¿Que es HTML?</a></li>
+	       	<li><a href="#ind2">Estructura básica de un documento HTML</a></li>
+	       	<li><a href="#ind3">Explicación de las etiquetas básicas</a></li>
+	       	<li><a href="#ind4">Etiquetas HTML</a></li>
+	       	<li><a href="#ind5">Navegadores Web</a></li>
+	       	<li><a href="#ind6">Versiones HTML</a></li>	       		       	
+	       	<li><a href="#ind7">Estructura de una Página HTML</a></li>	       	
+        </ul>
+        <hr>        
+        <h2 id="ind1">¿Que es HTML?</h2>
+        <p>HTML es el lenguaje estándar de marcado para crear páginas web.</p>
         <ul>
             <li>HTML significa Hyper Text Markup Language</li>
             <li>HTML describe la estructura de las páginas web utilizando marcas</li>
@@ -121,8 +138,9 @@
             <li>Las etiquetas de HTML son trozos de contenido como "heading", "paragraph", "table", etc</li>
             <li>Los navegadores no muestran las etiquetas HTML, pero las utilizan para renderizar el contenido de la página</li>
         </ul>
+        <a href="#ind0" style="color: blueviolet">Subir</a>
         <hr>
-        <h2>Estructura básica de un documento HTML</h2>
+        <h2 id="ind2">Estructura básica de un documento HTML</h2>
         
         <div class="ejemplo">
             <h3>Ejemplo</h3>
@@ -142,9 +160,10 @@
                 </code>
             </div>
         </div>
-        <h2>Explicación de las etiquetas básicas</h2>
+        <a href="#ind0" style="color: blueviolet">Subir</a>        
+        <h2 id="ind3">Explicación de las etiquetas básicas</h2>
         <ol>
-            <li>La declaración <code>&lt;!DOCTYPE html&gt;<span></7span></code> define que el documento es HTML5</li>
+            <li>La declaración <code>&lt;!DOCTYPE html&gt;</code> define que el documento es HTML5</li>
             <li>El elemento <code>&lt;html&gt;</code> es el elemento raiz de una página HTML</li>
             <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento y va dentro de la etiqueta <html></html></li>
             <li>El elemento <code>&lt;head&gt;</code> contiene meta información sobre el documento</li>
@@ -154,8 +173,9 @@
             <li>El elemento <code>&lt;h1&gt;</code> define una cabecera principal</li>
             <li>El elemento <code>&lt;p&gt;</code> define un párrafo</li>
         </ol>
+        <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
-        <h2>Etiquetas HTML</h2>
+        <h2 id="ind4">Etiquetas HTML</h2>
         <p>Las etiquetas HTML son los nombres de los elementos contenidos entre paréntesis angulares:</p>
         <div class="etiquetashtml">
             <p><b>&lt;tagname&gt;</b>aquí va el contenido...<b>&lt;/tagname&gt;</b></p>
@@ -172,15 +192,17 @@
         <div class="nota">
                 <p><b>Consejo: </b>La etiqueta de inicio también se llama etiqueta de apertura, y la de final etiqueta de cierre.</p>
         </div>
+        <a href="#ind0" style="color: blueviolet">Subir</a>        
         <div>
-            <h2>Navegadores Web</h2>
+            <h2 id="ind5">Navegadores Web</h2>
             <p>El propósito de un navegador (Chrome, IE, Firefox, Safari) es leer documentos HTML y pintarlos.   <br>
             Los navegadores no pintan las etiquetas HTML, pero las utiliza para determinar como pintar el documento:</p>
             <img src="img/navegador_chrome.png" alt="imagen navegador chrome" width="635" height="361">
         </div>
+        <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
         <div>
-            <h2>Versiones HTML Versions</h2>
+            <h2 id="ind6">Versiones HTML Versions</h2>
             <p>Hay muchas versiones de HTML:</p>
             <table>
                 <tr>
@@ -213,8 +235,9 @@
                 </tr>
             </table>
         </div>
+        <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
-        <h2>Estructura de una Página HTML</h2>
+        <h2 id="ind7">Estructura de una Página HTML</h2>
         <p>A continuación se muestra una visualización de una estructura de página</p>
         <div class="caja">
             <p>&lt;html&gt;</p>
@@ -246,6 +269,6 @@
             <p>Nota: sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (la zona blanca de arriba) sale en el navegador </p>
         </div>
         <hr>
-
+        <a href="#ind0" style="color: blueviolet">Subir</a>
     </body>
 </html>
