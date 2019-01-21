@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    
     <link rel="icon" href="img/favicon.ico" type="image/icon">
-    
-   <!-- <base href="file:///C:/Users/MAÑANAS.GET23-08/Documents/Antonia_Web/MF0950_2/UF1302/" target="_blank">    -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,9 +34,6 @@
 		table code {
 			color:black;
 		}
-        table h1,h2,h3,h4,h5,h6 {
-            margin: 0;
-        }
         #tabla1 {
             width: 100%;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -79,6 +74,10 @@
 			margin-top: 0;
 			margin-bottom: 0;
 		}
+		hr {
+			border: 1px solid #eee;
+			margin: 5px 20px;
+		}				
 		.code {
 			margin-top: 16px;
 			margin-bottom: 16px;
@@ -122,25 +121,83 @@
 			float: left;
 			width: 33.33%;
 		}
+		a:link {
+		  color: firebrick; 
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: blue;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: lightseagreen;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: yellow;
+			text-decoration: underline;}			
+
+		footer {
+			background-color: black;
+			padding: 10px;
+		}
+		footer a:link{
+			color: white;
+		}				
     </style>
 </head>
 <body>
+<header>
+	<div style="overflow: hidden; background-color: azure;">
+		<div style="width: 135px; float: left;">
+			<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+		</div>
+		<div style="float: left;">
+			<h2>Lenguaje de marcas</h2>
+			<nav>
+			<a href="index.html">Indice</a> | 
+			<a href="introduccion.html">Introducción</a> |
+			<a href="formato.html">Formatos</a> |
+			<a href="bloques.html">Bloques</a> |
+			<a href="listas.html">Listas</a> |     
+			<a href="tablas.html">Tablas</a> |         			
+			<a href="multimedia.html">Multimedia</a>         			
+			</nav>
+		</div>
+		<div style="float: right; margin: 20px;">
+			<a href="#"><img src="img/iconos32x32/facebooknegro32.png" alt="Facebook"></a>
+			<a href="#"><img src="img/iconos32x32/googleplusnegro32.png" alt="Google+"></a>
+			<a href="#"><img src="img/iconos32x32/instagramnegro32.png" alt="Instagram"></a>
+			<a href="#"><img src="img/iconos32x32/twitternegro32.png" alt="Twitter"></a>
+		</div>
+	</div>
+	<hr>   
+	<br>   	
+</header>
 <h1 id="ind0">HTML Multimedia</h1>
 <hr>
-<a href="index.html">Indice</a> | 
-<a href="introduccion.html">Introducción</a> |
-<a href="formato.html">Formatos</a> |
-<a href="bloques.html">Bloques</a> |
-<a href="listas.html">Listas</a> |     
-<a href="tablas.html">Tablas</a>            
-<hr>
+<aside>
 <ul>
 	<li><a href="#ind1">HTML Vídeo</a></li>
 	<li><a href="#ind2">HTML Audio</a></li>
 	<li><a href="#ind3">HTML Object</a></li>
 	<li><a href="#ind4">HTML Iframe</a></li>
 </ul>
-<hr> 
+<hr>
+</aside>
+<main>
+<section>
+    <img src="img/html-multimedia.png" alt="Bloques HTML" width="250px" style="float: right;">
+    <h2>¿Que es Multimedia?</h2>
+    <p>Los elementos multimedia pueden tener diferentes formatos. Ejemplos son; imágenes, música, sonido, vídeos, películas, animaciones, etc. Las páginas web a menudo contienen elementos multimedia de diferentes tipos y formatos.</p>
+    <br>
+    <br>
+    <hr>
+</section>  
+<article>
 <h2 id="ind1">HTML Vídeo</h2>
 <br>
 <table border="1">
@@ -200,7 +257,10 @@
 </video>
 <br>
 <a href="#ind0" style="color: blueviolet">Subir</a>   
-<hr>     	              
+<hr>  
+<br>
+</article>
+<article>
 <h2 id="ind2">HTML Audio</h2>
 <br>
 <audio controls>
@@ -215,7 +275,10 @@
 &lt;/audio&gt;</p>
 <br>
 <a href="#ind0" style="color: blueviolet">Subir</a>        	              
-<hr>     	              
+<hr>     
+<br>
+</article>
+<article>
 <h2 id="ind3">HTML Object</h2>
 <br>
 <p>Necesita la aplicación para sacar el objeto. Sólo se utiliza para elementos swf (flash).</p>
@@ -227,6 +290,8 @@
 <a href="#ind0" style="color: blueviolet">Subir</a>        	              
 <br>
 <hr>
+</article>	              
+<article>
 <h2 id="ind4">HTML iframe</h2>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -258,6 +323,15 @@
 <a class="twitter-timeline" href="https://twitter.com/BoletinViajes?ref_src=twsrc%5Etfw">Tweets by BoletinViajes</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <br>
-<a href="#ind0" style="color: blueviolet">Subir</a>        	              
+<a href="#ind0" style="color: blueviolet">Subir</a>   
+</article>
+<hr>
+<br>
+</main> 
+<footer>
+	<a href="#">Política de cookies  |</a> 
+	<a href="#">Política de privacidad  |</a>
+	<a href="#">Aviso legal</a>
+</footer>     	              
 </body>
 </html>

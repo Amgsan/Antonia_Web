@@ -7,6 +7,9 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="Antonia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    
+		<link rel="icon" href="img/favicon.ico" type="image/icon">         
 <!--        <base href="http://localhost:8080/MF0950_2/UF1302/" target="_blank">-->
         <style>
             body {
@@ -38,9 +41,7 @@
             tr:nth-child(even) {
                 background-color: #eee;
             }
-            tr:nth-child(odd) {
-                background-color: #fff;
-            }
+
             .caja {
                 border: 1px solid #cccccc;
                 background-color: #f1f1f1;
@@ -99,25 +100,65 @@
             dl dt {
                 margin-left: 35px;
             }
-        </style>
-        <script>   </script>
-        <link rel="icon" href="imagen.png" type="image/png">
-        <link rel="icon" href="imagen.gif" type="image/gif">
-        <link rel="icon" href="imagen.ico" type="image/vnd.microsoft.ico">
-        <link href="css/estilos.css" rel="stylesheet">
-        <script src="js/funciones.js" type="text/javascript"></script>
-        
+			a:link {
+			  color: firebrick; 
+			  text-decoration: none;
+			}
+
+			a:visited {
+			  color: blue;
+			  text-decoration: none;
+			}
+
+			a:hover {
+			  color: lightseagreen;
+			  text-decoration: underline;
+			}
+
+			a:active {
+			  color: yellow;
+				text-decoration: underline;}			
+
+			footer {
+				background-color: black;
+				padding: 10px;
+			}
+			footer a:link{
+				color: white;
+			}	
+        </style>     
     </head>
     <body>
-        <h1 id="ind0">HTML Introducción</h1>
-        <hr>
-        <a href="index.html">Indice</a> | 
-		<a href="introduccion.html">Introducción</a> |
-        <a href="formato.html">Formatos</a> |
-	    <a href="bloques.html">Bloques</a> |
-	    <a href="listas.html">Listas</a> |     
-	    <a href="tablas.html">Tablas</a>            
-        <hr>
+    <header>
+     	<div style="overflow: hidden; background-color: azure;">
+			<div style="width: 135px; float: left;">
+				<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+			</div>
+			<div style="float: left;">
+				<h2>Lenguaje de marcas</h2>
+				<nav>
+				<a href="index.html">Indice</a> | 
+				<a href="introduccion.html">Introducción</a> |
+				<a href="formato.html">Formatos</a> |
+				<a href="bloques.html">Bloques</a> |
+				<a href="listas.html">Listas</a> |     
+				<a href="tablas.html">Tablas</a> |         			
+				<a href="multimedia.html">Multimedia</a>         			
+				</nav>
+			</div>
+			<div style="float: right; margin: 20px;">
+				<a href="#"><img src="img/iconos32x32/facebooknegro32.png" alt="Facebook"></a>
+				<a href="#"><img src="img/iconos32x32/googleplusnegro32.png" alt="Google+"></a>
+				<a href="#"><img src="img/iconos32x32/instagramnegro32.png" alt="Instagram"></a>
+				<a href="#"><img src="img/iconos32x32/twitternegro32.png" alt="Twitter"></a>
+			</div>
+       	</div>
+       	<hr>   
+       	<br>   	
+    </header>    
+	<h1 id="ind0">HTML Introducción</h1>
+	<hr>
+    <aside>
         <ul>
 			<li><a href="#ind1">¿Que es HTML?</a></li>
 	       	<li><a href="#ind2">Estructura básica de un documento HTML</a></li>
@@ -127,7 +168,10 @@
 	       	<li><a href="#ind6">Versiones HTML</a></li>	       		       	
 	       	<li><a href="#ind7">Estructura de una Página HTML</a></li>	       	
         </ul>
-        <hr>        
+	</aside>        
+    <hr>        
+    <main>
+    <article>
         <h2 id="ind1">¿Que es HTML?</h2>
         <p>HTML es el lenguaje estándar de marcado para crear páginas web.</p>
         <ul>
@@ -139,9 +183,10 @@
             <li>Los navegadores no muestran las etiquetas HTML, pero las utilizan para renderizar el contenido de la página</li>
         </ul>
         <a href="#ind0" style="color: blueviolet">Subir</a>
-        <hr>
+	</article>
+    <hr>
+   <article>
         <h2 id="ind2">Estructura básica de un documento HTML</h2>
-        
         <div class="ejemplo">
             <h3>Ejemplo</h3>
             <div class="code">
@@ -160,7 +205,10 @@
                 </code>
             </div>
         </div>
-        <a href="#ind0" style="color: blueviolet">Subir</a>        
+        <a href="#ind0" style="color: blueviolet">Subir</a> 	
+        <hr>
+	</article>               
+	<article>
         <h2 id="ind3">Explicación de las etiquetas básicas</h2>
         <ol>
             <li>La declaración <code>&lt;!DOCTYPE html&gt;</code> define que el documento es HTML5</li>
@@ -175,6 +223,8 @@
         </ol>
         <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
+	</article>               
+	<article>
         <h2 id="ind4">Etiquetas HTML</h2>
         <p>Las etiquetas HTML son los nombres de los elementos contenidos entre paréntesis angulares:</p>
         <div class="etiquetashtml">
@@ -192,7 +242,10 @@
         <div class="nota">
                 <p><b>Consejo: </b>La etiqueta de inicio también se llama etiqueta de apertura, y la de final etiqueta de cierre.</p>
         </div>
-        <a href="#ind0" style="color: blueviolet">Subir</a>        
+        <a href="#ind0" style="color: blueviolet">Subir</a>      
+        <hr>
+	</article>                 
+	<article>
         <div>
             <h2 id="ind5">Navegadores Web</h2>
             <p>El propósito de un navegador (Chrome, IE, Firefox, Safari) es leer documentos HTML y pintarlos.   <br>
@@ -201,6 +254,8 @@
         </div>
         <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
+	</article>               
+	<article>
         <div>
             <h2 id="ind6">Versiones HTML Versions</h2>
             <p>Hay muchas versiones de HTML:</p>
@@ -237,6 +292,8 @@
         </div>
         <a href="#ind0" style="color: blueviolet">Subir</a>        
         <hr>
+	</article>               
+	<article>
         <h2 id="ind7">Estructura de una Página HTML</h2>
         <p>A continuación se muestra una visualización de una estructura de página</p>
         <div class="caja">
@@ -270,5 +327,13 @@
         </div>
         <hr>
         <a href="#ind0" style="color: blueviolet">Subir</a>
+	</article>               
+  	<br>
+   	</main>
+   	<footer>
+		<a href="#">Política de cookies  |</a> 
+		<a href="#">Política de privacidad  |</a>
+		<a href="#">Aviso legal</a>
+	</footer>
     </body>
 </html>

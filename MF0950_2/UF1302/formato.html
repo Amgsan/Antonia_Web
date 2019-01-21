@@ -35,9 +35,6 @@
 		table code {
 			color:black;
 		}
-        table h1,h2,h3,h4,h5,h6 {
-            margin: 0;
-        }
         table {
             width: 100%;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -55,21 +52,70 @@
         tr:nth-child(even) {
             background-color: #eee;
         }
-        tr:nth-child(odd) {
-            background-color: #fff;
-        }
+		hr {
+			border: 1px solid #eee;
+			margin: 5px 20px;
+		}						
+		a:link {
+		  color: firebrick; 
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: blue;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: lightseagreen;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: yellow;
+			text-decoration: underline;}			
+
+		footer {
+			background-color: black;
+			padding: 10px;
+		}
+		footer a:link{
+			color: white;
+		}		
     </style>
 </head>
 <body>
-    <h1 id="ind0">Formato HTML</h1>
-    <hr>
-	<a href="index.html">Indice</a> | 
-	<a href="introduccion.html">Introducción</a> |
-	<a href="formato.html">Formatos</a> |
-	<a href="bloques.html">Bloques</a> |
-	<a href="listas.html">Listas</a> |     
-	<a href="tablas.html">Tablas</a>            
-	<hr>
+<header>
+	<div style="overflow: hidden; background-color: azure;">
+		<div style="width: 135px; float: left;">
+			<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+		</div>
+		<div style="float: left;">
+			<h2>Lenguaje de marcas</h2>
+			<nav>
+			<a href="index.html">Indice</a> | 
+			<a href="introduccion.html">Introducción</a> |
+			<a href="formato.html">Formatos</a> |
+			<a href="bloques.html">Bloques</a> |
+			<a href="listas.html">Listas</a> |     
+			<a href="tablas.html">Tablas</a> |         			
+			<a href="multimedia.html">Multimedia</a>         			
+			</nav>
+		</div>
+		<div style="float: right; margin: 20px;">
+			<a href="#"><img src="img/iconos32x32/facebooknegro32.png" alt="Facebook"></a>
+			<a href="#"><img src="img/iconos32x32/googleplusnegro32.png" alt="Google+"></a>
+			<a href="#"><img src="img/iconos32x32/instagramnegro32.png" alt="Instagram"></a>
+			<a href="#"><img src="img/iconos32x32/twitternegro32.png" alt="Twitter"></a>
+		</div>
+	</div>
+	<hr>   
+	<br>   	
+</header>
+<main>    
+<h1 id="ind0">Formato HTML</h1>
+<hr>
+<aside>
 	<ul>
 		<li><a href="#ind1">Encabezados de texto</a></li>
 		<li><a href="#ind2">Formateo de elementos HTML</a></li>
@@ -77,9 +123,12 @@
 		<li><a href="#ind4">Ejemplo de uso</a></li>
 	</ul>
 	<hr>            
-    <img src="img/html-formatos-de-texto.png" alt="Formatos de texto" width="500px" style="float: right;">
+</aside>
+<section>
+    <img src="img/html-formatos-de-texto.png" alt="Formatos de texto" width="250px" style="float: right;">
     <p>El formato del texto, es el marcado que se aplica a un texto para añadirle datos de forma. Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido</p>
-    <hr>
+</section>       
+<article>
     <h2 id="ind1">Encabezados de texto</h2>
     <p>Las máquinas de búsqueda utilizan los encabezados para indexar la estructura y el contenido de las páginas web</p>
     <p>Los usuarios hojean las páginas por sus encabezados. Es importante utilizar los encabezados para mostrar la estructura del documento</p>
@@ -135,6 +184,8 @@
     <br>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	
     <hr>
+</article>    
+<article>
     <h2 id="ind2">Formateo de elementos HTML</h2>
 	<p>HTML tiene elementos especiales para definir texto con un significado especial.</p>
     <p>HTML utiliza elementos como <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code> para formatear el texto como negrita o cursiva.</p>
@@ -226,6 +277,8 @@
     <a href="#ind0" style="color: blueviolet">Subir</a>        	    
 	<br>
     <hr>
+</article>           
+<article>
     <h2 id="ind3">Etiquetas que separan el texto</h2>
     <p>La etiqueta <code>&lt;p&gt;</code> separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p> 
     <p>La etiqueta <code>&lt;br&gt;</code> es una etiqueta vacía , lo que significa que no tiene ninguna etiqueta final. Inserta un salto de línea (una nueva línea ) sin comenzar un nuevo párrafo.</p>
@@ -266,7 +319,10 @@
     </div>
     <br>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	
+    <hr>
     <br>
+</article>       
+<article>
 	<h2 id="ind4"><small>Ejemplo de uso</small></h2>
     <p><mark><b>Texto en negrita y resaltado</b></mark></p>
     <hr>
@@ -280,5 +336,12 @@
     <br>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	              
     <hr>
+</article>    
+</main>	
+<footer>
+	<a href="#">Política de cookies  |</a> 
+	<a href="#">Política de privacidad  |</a>
+	<a href="#">Aviso legal</a>
+</footer>
 </body>
 </html>

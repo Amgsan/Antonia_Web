@@ -36,9 +36,6 @@
 		table code {
 			color:black;
 		}
-        table h1,h2,h3,h4,h5,h6 {
-            margin: 0;
-        }
         table {
             width: 100%;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -60,6 +57,10 @@
 			margin-top: 0;
 			margin-bottom: 0;
 		}
+		hr {
+			border: 1px solid #eee;
+			margin: 5px 20px;
+		}		
 		.code {
 			margin-top: 16px;
 			margin-bottom: 16px;
@@ -103,29 +104,83 @@
 			float: left;
 			width: 33.33%;
 		}
+		a:link {
+		  color: firebrick; 
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: blue;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: lightseagreen;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: yellow;
+			text-decoration: underline;}			
+
+		footer {
+			background-color: black;
+			padding: 10px;
+		}
+		footer a:link{
+			color: white;
+		}				
     </style>
 </head>
 <body>
-    <h1 id="ind0">Bloques HTML</h1>
-    <hr>
-	<a href="index.html">Indice</a> | 
-	<a href="introduccion.html">Introducción</a> |
-	<a href="formato.html">Formatos</a> |
-	<a href="bloques.html">Bloques</a> |
-	<a href="listas.html">Listas</a> |     
-	<a href="tablas.html">Tablas</a>            
-	<hr>  
+<header>
+	<div style="overflow: hidden; background-color: azure;">
+		<div style="width: 135px; float: left;">
+			<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+		</div>
+		<div style="float: left;">
+			<h2>Lenguaje de marcas</h2>
+			<nav>
+			<a href="index.html">Indice</a> | 
+			<a href="introduccion.html">Introducción</a> |
+			<a href="formato.html">Formatos</a> |
+			<a href="bloques.html">Bloques</a> |
+			<a href="listas.html">Listas</a> |     
+			<a href="tablas.html">Tablas</a> |         			
+			<a href="multimedia.html">Multimedia</a>         			
+			</nav>
+		</div>
+		<div style="float: right; margin: 20px;">
+			<a href="#"><img src="img/iconos32x32/facebooknegro32.png" alt="Facebook"></a>
+			<a href="#"><img src="img/iconos32x32/googleplusnegro32.png" alt="Google+"></a>
+			<a href="#"><img src="img/iconos32x32/instagramnegro32.png" alt="Instagram"></a>
+			<a href="#"><img src="img/iconos32x32/twitternegro32.png" alt="Twitter"></a>
+		</div>
+	</div>
+	<hr>   
+	<br>   	
+</header>
+<main>
+<h1 id="ind0">Bloques HTML</h1>
+<hr>
+<aside>
    <ul>
 		<li><a href="#ind1">Etiquetas que citan el texto</a></li>
 		<li><a href="#ind2">Elementos que agrupan el texto</a></li>
 		<li><a href="#ind3">Etiquetas de código de computadora</a></li>
 	</ul>
 	<hr>	  
+</aside>
+<section>
+    <img src="img/html-bloques.png" alt="Bloques HTML" width="250px" style="float: right;">
+</section>  
+<br>     
+<article>
 	<h2 id="ind1">Etiquetas que citan el texto</h2>
     <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
     <p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, una película, un programa de televisión o una canción, no el nombre de una persona.</p>
     <p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
-    <p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Ggenera automáticamente comillas alrededor del contenido.</p>
+    <p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Genera automáticamente comillas alrededor del contenido.</p>
     <p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo <code>title</code> para la definición / explicación del término dentro. Se usa para el navegador.</p>
    <br>
 	<table>
@@ -186,6 +241,8 @@
 	</div>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	
 	<hr>
+</article>	
+<article>
 	<h2 id="ind2">Elementos que agrupan el texto</h2>  
 	<p>El <code>&lt;div&gt;</code> es un elemento que actúa como un contenedor de otros elementos. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales. Cuando se utiliza junto con CSS, puede ser utilizado para dar estilo a un bloque de contenido.</p>
 	<p>El elemento <code>&lt;span&gt;</code> a menudo se utiza como contenedor para agrupar un texto en línea. No tiene necesariamente atributos, pero <code>&lt;style&gt;</code>, <code>&lt;class&gt;</code> e <code>&lt;id&gt;</code> son habituales para dar estilos CSS a un trozo de texto.</p>
@@ -233,6 +290,8 @@
 	<br>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	
 	<hr>
+</article>	
+<article>
 	<h2 id="ind3">Etiquetas de código de computadora</h2>
 	<ul>
 		<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
@@ -302,6 +361,15 @@
 		</div>
 	</div>
 	<br>
-    <a href="#ind0" style="color: blueviolet">Subir</a>        	
+    <a href="#ind0" style="color: blueviolet">Subir</a>  
+    <br>
+</article>
+<br>	          	
+</main>    
+<footer>
+	<a href="#">Política de cookies  |</a> 
+	<a href="#">Política de privacidad  |</a>
+	<a href="#">Aviso legal</a>
+</footer>
 </body>
 </html>

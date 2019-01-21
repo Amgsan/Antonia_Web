@@ -36,9 +36,6 @@
 		table code {
 			color:black;
 		}
-        table h1,h2,h3,h4,h5,h6 {
-            margin: 0;
-        }
         #tabla1 {
             width: 100%;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -67,13 +64,25 @@
             border: 1px solid #dddddd;
 			width: 25%;
         }
+		.tablademo2 {
+			width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+			border-collapse: collapse;
+		}		
 		.tablademo2 td, .tablademo2 th{
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #dddddd;
 			width: 33%;
 		}
 		.blockquote {
 			margin-top: 0;
 			margin-bottom: 0;
 		}
+		hr {
+			border: 1px solid #eee;
+			margin: 5px 20px;
+		}		
 		.code {
 			margin-top: 16px;
 			margin-bottom: 16px;
@@ -117,18 +126,65 @@
 			float: left;
 			width: 33.33%;
 		}
+		a:link {
+		  color: firebrick; 
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: blue;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: lightseagreen;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: yellow;
+			text-decoration: underline;}			
+
+		footer {
+			background-color: black;
+			padding: 10px;
+		}
+		footer a:link{
+			color: white;
+		}				
     </style>
 </head>
 <body>
-    <h1 id="ind0">Tablas HTML</h1>
-    <hr>
-	<a href="index.html">Indice</a> | 
-	<a href="introduccion.html">Introducción</a> |
-	<a href="formato.html">Formatos</a> |
-	<a href="bloques.html">Bloques</a> |
-	<a href="listas.html">Listas</a> |     
-	<a href="tablas.html">Tablas</a>            
-	<hr> 
+<header>
+	<div style="overflow: hidden; background-color: azure;">
+		<div style="width: 135px; float: left;">
+			<a href="index.html" style="text-align: left;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página" style="padding-top: 10px;"></a>
+		</div>
+		<div style="float: left;">
+			<h2>Lenguaje de marcas</h2>
+			<nav>
+			<a href="index.html">Indice</a> | 
+			<a href="introduccion.html">Introducción</a> |
+			<a href="formato.html">Formatos</a> |
+			<a href="bloques.html">Bloques</a> |
+			<a href="listas.html">Listas</a> |     
+			<a href="tablas.html">Tablas</a> |         			
+			<a href="multimedia.html">Multimedia</a>         			
+			</nav>
+		</div>
+		<div style="float: right; margin: 20px;">
+			<a href="#"><img src="img/iconos32x32/facebooknegro32.png" alt="Facebook"></a>
+			<a href="#"><img src="img/iconos32x32/googleplusnegro32.png" alt="Google+"></a>
+			<a href="#"><img src="img/iconos32x32/instagramnegro32.png" alt="Instagram"></a>
+			<a href="#"><img src="img/iconos32x32/twitternegro32.png" alt="Twitter"></a>
+		</div>
+	</div>
+	<hr>   
+	<br>   	
+</header>
+<h1 id="ind0">Tablas HTML</h1>
+<hr>
+<aside>
 	<ul>
 		<li><a href="#ind1">Etiquetas que definen una tabla</a></li>
 		<li><a href="#ind2">El atributo Scope</a></li>
@@ -137,6 +193,12 @@
 		<li><a href="#ind5">Agrupación por filas</a></li>
 	</ul>
 	<hr> 
+</aside>	
+<main>
+<section>
+    <img src="img/html-tablas.png" alt="Bloques HTML" width="250px" style="float: right;">
+</section>  
+<article>
 	<h2 id="ind1">Etiquetas que definen una tabla</h2>
 	<p>Una tabla HTML se define con la etiqueta <code>&lt;table&gt;</code> tag.</p>
 	<p>Cada tabla se define con la etiqueta <code>&lt;tr&gt;</code>. La cabecera se define con <code>&lt;th&gt;</code>. Por defecto, los encabezados son centrados y en negrita. Una celda se define con la etiqueta <code>&lt;td&gt;</code></p>
@@ -189,7 +251,10 @@
     </table>
     <br>
     <a href="#ind0" style="color: blueviolet">Subir</a>        	              
+	<hr>
     <br>
+</article>	    
+<article>
     <h2 id="ind2">El atributo Scope</h2>
     <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. Solo afecta a las etiquetas <code>&lt;th&gt;</code></p>
     <p>El atributo scope especifica si una celda de cabecera es de fila, columna o de grupo de columnas o filas. No tiene efectos visuales en los navegadores, pero se puede utlizar para los lectores de pantalla.</p>
@@ -279,7 +344,10 @@
 </table>
 <br>
 <a href="#ind0" style="color: blueviolet">Subir</a>        	              
+	<hr>
 	<br>
+</article>   
+<article>
     <h2 id="ind3">Atributos colspan y rowspan</h2>
     <p>El atributo colspan define el número de columnas que una celda debe ocupar. El atributo rowspan especifica el número de filas que una celda debe ocupar.</p>
 	<table class="tablademo1">
@@ -360,12 +428,14 @@
 	<a href="#ind0" style="color: blueviolet">Subir</a>   
 	<br>     	              
 	<hr>
+</article>      
+<article>
 	<h2 id="ind4">Etiquetas colgroup y col</h2>
 	<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para dar formato. La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna de un <code>&lt;colgroup&gt;</code>. Es útil para aplicar estilos a columnas completas sin tener que repetir los estilos pra cada celda..</p>
-	<table class="tablademo1 tablademo2">
+	<table class="tablademo2">
 	<tr>
 		<td>
-		<table>
+		<table class="tablademo2">
 			<caption>Encabezado superior</caption>
 			<colgroup>
 				<col span="2" style="background-color: aqua">
@@ -389,7 +459,7 @@
 		</table>
 		</td>
 		<td>
-		<table>
+		<table class="tablademo2">
 			<caption>Encabezado superior</caption>
 			<colgroup>
 				<col span="1" style="background-color: aqua">
@@ -414,7 +484,7 @@
 		</table>
 		</td>
 		<td>
-		<table>
+		<table class="tablademo2">
 			<caption>Encabezado superior</caption>
 			<colgroup>
 				<col span="1" style="background-color: aqua">
@@ -442,9 +512,12 @@
 	<br>
 	<a href="#ind0" style="color: blueviolet">Subir</a>        	              
 	<br>
+	<hr>
+</article>		
+<article>
 	<h2 id="ind5">Agrupación por filas</h2>
 	<p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Esto son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a las filas que representan un pie o resumen; y tbody, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
-	<table class="tablademo1 tablademo2">
+	<table class="tablademo2">
     <tr>
 		<td>
 			<table>
@@ -624,6 +697,15 @@
 </tr>
 </table>
 <br>
-<a href="#ind0" style="color: blueviolet">Subir</a>        	              	
+<a href="#ind0" style="color: blueviolet">Subir</a>  
+<hr>
+<br>
+</article>
+</main>
+<footer>
+	<a href="#">Política de cookies  |</a> 
+	<a href="#">Política de privacidad  |</a>
+	<a href="#">Aviso legal</a>
+</footer>      	              	
 </body>
 </html>

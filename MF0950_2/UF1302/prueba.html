@@ -11,12 +11,32 @@
         <style>
             body {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
             }   
             h1,h2,h3,h4,h5,h6 {
                 font-family: Arial, Helvetica, sans-serif;
             } 
+
+
+		.tablademo2 {
+			width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+			border-collapse: collapse;
+		}		
+		.tablademo2 td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #dddddd;
+			width: 33%;
+		}
+		.tablademo2 th{
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #dddddd;
+			width: 33%;
+		}
+
 		</style>	
     </head>
     <body>
@@ -31,5 +51,89 @@
 			<a class="menu" href="tablas.html">Tablas</a>            
 			<hr>
         </header>
+
+	<table class="tablademo2">
+	<tr>
+		<td>
+		<table>
+			<caption>Encabezado superior</caption>
+			<colgroup>
+				<col span="2" style="background-color: aqua">
+				<col style="background-color: green">
+			</colgroup>
+			<tr>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td>texto</td>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td>texto</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		<table>
+			<caption>Encabezado superior</caption>
+			<colgroup>
+				<col span="1" style="background-color: aqua">
+				<col span="1">
+				<col span="1" style="background-color: green">
+			</colgroup>
+			<tr>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td>texto</td>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td>texto</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		<table>
+			<caption>Encabezado superior</caption>
+			<colgroup>
+				<col span="1" style="background-color: aqua">
+				<col span="2">
+			</colgroup>
+			<tr>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+				<th scope="col">Título</th>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td>texto</td>
+			</tr>
+			<tr>
+				<td>texto</td>
+				<td>texto</td>
+				<td style="background-color: red">texto</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+	<br>
+	<a href="#ind0" style="color: blueviolet">Subir</a>        	              
+	<br>
+	<hr>        
+        
+        
     </body>
 </html>
