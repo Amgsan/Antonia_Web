@@ -36,104 +36,88 @@
             border: 1px solid #dddddd;
 			width: 33%;
 		}
-
+		.divtipo2 {
+			border: 1px dotted blue;
+			padding: 15px;
+			margin: 20px 80px;
+		}
+		img {
+			margin-top: 5px;
+			padding-top: 15px;
+			margin-right: 10px;
+			text-align: center;
+	
+			}
+			ul li{
+				list-style-type: none;
+			}
+			.t2 {
+				padding-bottom: 20px;
+			}
+			.t3 {
+				margin-left: 75px;
+			}
 		</style>	
     </head>
     <body>
-	    <header>
-			<h1>HTML Indice</h1>
-			<hr>
-			<a class="menu" href="index.html">Indice</a> | 
-			<a class="menu" href="introduccion.html">Introducción</a> |
-			<a class="menu" href="formato.html">Formatos</a> |
-			<a class="menu" href="bloques.html">Bloques</a> |
-			<a class="menu" href="listas.html">Listas</a> |     
-			<a class="menu" href="tablas.html">Tablas</a>            
-			<hr>
-        </header>
 
-	<table class="tablademo2">
-	<tr>
-		<td>
-		<table>
-			<caption>Encabezado superior</caption>
-			<colgroup>
-				<col span="2" style="background-color: aqua">
-				<col style="background-color: green">
-			</colgroup>
-			<tr>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td>texto</td>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td>texto</td>
-			</tr>
-		</table>
-		</td>
-		<td>
-		<table>
-			<caption>Encabezado superior</caption>
-			<colgroup>
-				<col span="1" style="background-color: aqua">
-				<col span="1">
-				<col span="1" style="background-color: green">
-			</colgroup>
-			<tr>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td>texto</td>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td>texto</td>
-			</tr>
-		</table>
-		</td>
-		<td>
-		<table>
-			<caption>Encabezado superior</caption>
-			<colgroup>
-				<col span="1" style="background-color: aqua">
-				<col span="2">
-			</colgroup>
-			<tr>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-				<th scope="col">Título</th>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td>texto</td>
-			</tr>
-			<tr>
-				<td>texto</td>
-				<td>texto</td>
-				<td style="background-color: red">texto</td>
-			</tr>
-		</table>
-		</td>
-	</tr>
-	</table>
-	<br>
-	<a href="#ind0" style="color: blueviolet">Subir</a>        	              
-	<br>
-	<hr>        
-        
+	<div class="divtipo2">
+		<p><b>Importante</b></p>
+		<dl>	
+			<dt><img src="img/icon_eye.gif" alt="eye"><a href="#"><b>Visual</b></a>
+				<dd>La ceguera, la baja visión y la ceguera al color. <br></dd>
+			</dt>
+
+			
+			<dt><img src="img/icon_ear.gif" alt="ear"><a href="#"><b>Audición</b></a>
+				<dd>La sordera.<br></dd>
+			</dt>
+			
+			
+			<dt><img src="img/icon_hand.gif" alt="motor"><a href="#"><b>Motor</b></a>
+				<dd>La incapacidad para utilizar un ratón, el tiempo de respuesta lento, el control motor delicado.<br></dd>
+			</dt>
+			
+			
+			<dt><img src="img/icon_brain.gif" alt="brain"><a href="#"><b>Cognitivo</b></a>
+				<dd>Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.<br></dd>
+			</dt>			
+		</dl>
+	</div>            
+    <div class="divtipo2">
+		<p><b>Importante</b></p>
+		
+		<ul>
+			<li>
+				<div class="t2"><img src="img/icon_eye.gif" alt="eye"></div>
+				<div class="t3">
+					<p><a href="#"><b>Visual</b></a></p>
+					<p>La ceguera, la baja visión y la ceguera al color.</p>
+				</div>
+			</li>
+			<li>
+				<div><img src="img/icon_ear.gif" alt="ear"></div>
+				<div>
+					<p><a href="#"><b>Audición</b></a></p>
+					<p>La sordera.</p>
+				</div>				
+			</li>
+			<li>
+				<div><img src="img/icon_hand.gif" alt="motor"></div>
+				<div>
+					<p><a href="#"><b>Motor</b></a></p>
+					<p>La incapacidad para utilizar un ratón, el tiempo de respuesta lento, el control motor delicado.</p>
+				</div>					
+			</li>
+			<li>
+				<div><img src="img/icon_brain.gif" alt="brain"></div>
+				<div>
+					<p><a href="#"><b>Cognitivo</b></a></p>
+					<p>Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.</p>
+				</div>					
+			</li>
+		</ul>
+	</div>     
         
     </body>
 </html>
