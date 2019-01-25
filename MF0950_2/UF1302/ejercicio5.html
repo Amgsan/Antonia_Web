@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas de imagen, secciones y semánticas</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Etiquetas de imagen, secciones y semánticas">
+    <meta name="keywords" content="etiquetas, imagen, secciones, semántica">
+    <meta name="title" content="Etiquetas de imagen, secciones y semánticas">
+    <meta name="author" content="Antonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		nav, div,  header, section, article, footer, aside, main, h1, h2, p {
+			margin: 0;
+			padding: 0;
+		}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 90%;
+			margin: 20px auto;
+			border: 1px solid #797979;
+			text-align: center;
+			background-color:#D9D8D8;
+			box-shadow: 0 12px 16px rgba(0,0,0,0.24);
+        } 
+		header {
+			background-color: #6AA6BF;
+			color: white;
+			padding: 10px;
+		}
+		section {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+        h1 {
+			font-size: 55px;
+			text-align: center;
+        }
+		header p {
+			font-size: 20px;
+		}		
+		.tituloseccion {
+			color: white; 
+			font-size: 20px;
+			padding: 10px;
+			background-color: tomato;	
+			text-align: center;
+			margin: 0;
+		}
+		.tituloarticulo {
+			color: #116AB3;
+			font-size: 25px;
+		}		
+		#navprincipal{
+			color:white;
+			background-color:#C6C6C6;
+			margin: 0;
+			padding: 10px;
+		}
+		#navprincipal a{
+			background-color: #6AA6BF;
+			padding: 5px 15px;
+		}
+		#navleft {
+			width: 25%;
+			text-align: left;
+		}
+		#div_tecnologia, #div_videostec, #div_videojuegos {
+			overflow: hidden;
+			padding: 1%;
+			margin: 0;
+			background-color: white;
+		}
+		.img100 {
+			width: 100%;
+		}
+		.estrella {
+			width: 10px;
+			height: 10px;
+		}
+		.articulo {
+			width: 32%;
+		}
+		.articulocentral{
+			margin:auto;
+		}		
+		h2 {
+			font-size: 20px;
+			color:#1727A6;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		.articulo p {
+			font-size: 15px;
+			text-align: left;
+			/*color:black;*/
+		}	
+		.videotec {
+			width: 35%;		
+		}	
+		.video {
+			width: 100%;
+			border: none;
+		}
+		.floatleft{
+			float: left;
+		}
+		.floatright{
+			float: right;
+		}	
+		.opina {
+			color:#771315;
+		}
+		a:link {
+			color: white; 
+			text-decoration: none;
+		}
+		a:visited {
+			color: white; 
+			text-decoration: none;
+		}
+		a:hover {
+			color: black;
+			text-decoration: none;
+		}
+		.articulo a:link {
+			color:#1727A6;
+		}	
+		.articulo a:visited {
+			color:#1727A6;
+		}		
+		.articulo a:hover {
+			color:black;
+		}			
+		ul li {
+			list-style-type: none;
+			list-style-image:url(img/lista-icono.png);
+			text-align: left;
+		}
+		ul li a:link {
+			color:#30589E;
+		}
+		ul li a:visited {
+			color:#30589E;
+		}	
+		ul li a:hover {
+			color:black;
+		}			
+		aside img {
+			width: 40%;
+			float: left;
+			margin: 5px;
+		}
+		aside h3 {
+			margin: 10px auto;
+			font-size: 17px;
+			color: black;
+			text-align: left;
+		}
+		.miniarticulo {
+			overflow: hidden;
+		}
+		footer {
+			background-color: #122F9C;
+			color:#EBE1CB;
+			padding: 15px;
+		}
+		footer a:link {
+			color:#EBE1CB;
+			text-decoration: underline;			
+		}
+		footer a:visited {
+			color:#EBE1CB;
+			text-decoration: underline;			
+		}		
+		footer a:hover {
+			color:black;
+			text-decoration: underline;		
+		}			
+    </style>
+</head>
+<body>
+<main>
+<header>
+	<h1>Título del Periódico</h1>
+	<p>El mayor magazine digital de España</p>
+</header>
+<nav id="navprincipal">
+	<a href="https://elpais.com/internacional/" target="_blank">Internacional</a>
+	<a href="https://elpais.com/elpais/opinion.html" target="_blank">Opinión</a>
+	<a href="https://elpais.com/sociedad/" target="_blank">Sociedad</a>
+	<a href="https://elpais.com/economia/" target="_blank">Economía</a>
+	<a href="https://elpais.com/elpais/ciencia.html" target="_blank">Ciencia</a>
+	<a href="https://elpais.com/tecnologia/" target="_blank">Tecnología</a>
+	<a href="https://elpais.com/cultura/" target="_blank">Cultura</a>						
+	<a href="https://elpais.com/tag/gente/a" target="_blank">Gente</a>		
+	<a href="https://elpais.com/deportes/" target="_blank">Deportes</a>
+	<a href="https://elpais.com/cultura/television.html" target="_blank">Televisión</a>
+	<a href="https://elpais.com/elpais/videos.html" target="_blank">Vídeo</a>							
+</nav>
+
+<section id="tecnologia">
+	<h2 class="tituloseccion">Tecnología</h2>
+	<div id="div_tecnologia">
+		<div class="articulo floatleft">
+			<img src="img/galaxy-note_9.jpg" alt="samsung galaxy note 9" class="img100">
+			<h2><a href="https://elpais.com/elpais/2018/10/31/escaparate/1540972323_286040.html" target="_blank">Análisis | Un mes con el Samsung Galaxy Note 9</a></h2>
+			<p class="opina">LAURA PÉREZ
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
+			</p><br>
+			<p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>			
+		</div>
+		<div class="articulo floatright">
+			<img src="img/honor-view20.jpg" alt="honorview20" class="img100">
+			<h2><a href="https://elpais.com/tecnologia/2019/01/21/actualidad/1548110580_761041.html" target="_blank">Honor View20, un móvil con más píxeles que ninguno</a></h2>
+			<p class="opina">ANA GÓMEZ
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
+			<p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
+		</div>			
+		<div class="articulo articulocentral">
+			<img src="img/pocophone-f1.jpg" alt="pocophone" class="img100">
+			<h2><a href="https://elpais.com/elpais/2018/10/05/escaparate/1538727409_787464.html" target="_blank">Pocophone F1, ¿el mejor móvil en relación calidad-precio?</a></h2>
+			<p class="opina">ANTONIO SÁNCHEZ
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
+			<p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
+		</div>
+	</div>
+	<div id="div_videostec">
+		<nav id="navleft" class="floatleft">
+			<img src="img/logo-vodafone.png" alt="vodafone">
+			<ul>
+				<li><a href="#">Más populares</a></li>
+				<li><a href="#">Redes sociales</a></li>
+				<li><a href="#">Ordenadores</a></li>
+				<li><a href="#">Gadgets</a></li>
+				<li><a href="#">Videoconsolas</a></li>
+				<li><a href="#">Teléfonos Móviles</a></li>
+				<li><a href="#">WhatsApp</a></li>
+				<li><a href="#">Tablets</a></li>
+				<li><a href="#">Smartphones</a></li>
+			</ul>
+		</nav>
+		<div class="videotec floatleft">
+			<iframe class="video" width="392" height="220" src="https://www.youtube.com/embed/IP3rOxqQQAw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+			<h2>El superordenador que fabrica humanos virtuales para probar medicinas</h2>
+		</div>			
+		<div class="videotec floatright">
+			<iframe class="video" width="392" height="220" src="https://www.youtube.com/embed/6_YopNlxcYU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h2>Una retina de grafeno para devolver la vista a 230 millones de personas</h2>
+		</div>					
+	</div>	
+</section>	
+<section id="videojuegos">
+	<h2 class="tituloseccion">Videojuegos</h2>
+	<div id="div_videojuegos">
+		<div class="articulo floatleft">
+			<img src="img/fornite.jpg" alt="fortnite" class="img100">
+			<h2><a href="https://as.com/meristation/2019/01/24/noticias/1548335513_179173.html" target="_blank">Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</a></h2>
+			<p class="opina">JOSÉ ORTIZ
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
+			</p><br>
+			<p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>			
+		</div>
+		<aside class="articulo floatright">
+			<h3>Contenido relacionado</h3>
+			<div class="miniarticulo">
+			<img src="img/red_dead_redemption3.jpg" alt="red dead">
+			<h2><a href="#">Red Dead Redemption 2, número 1 en USA.</a></h2>
+			</div>
+			<hr>
+			<div class="miniarticulo">
+			<img src="img/red_dead_redemption2.jpg" alt="red dead">
+			<h2><a href="#">Todos los trucos de Red Dead Redemption 2.</a></h2>
+			</div>
+			<hr>
+			<div class="miniarticulo">
+			<img src="img/assassins-creed-odyssey.jpg" alt="assassins">
+			<h2><a href="#">Assassin's Creed Odyssey, Guía completa.</a></h2>
+			</div>
+			<hr>
+			<div class="miniarticulo">
+			<img src="img/call-of-duty.jpg" alt="honorview20">
+			<h2><a href="#">Call of Duty: Black Ops 4, Guía de logros y trofeos</a></h2>
+			</div>
+		</aside>		
+		<div class="articulo articulocentral">
+			<img src="img/gta5.jpg" alt="trucos GTA" class="img100">
+			<h2><a href="https://as.com/meristation/2019/01/16/trucos/1547655206_592305.html" target="_blank">Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</a></h2>
+			<p class="opina">PEDRO ZAMBRANO
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">						
+			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
+			<p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas</p>
+		</div>					
+	</div>
+</section>
+<footer>
+	<a href="#">Aviso legal  |</a> 
+	<a href="#">Política de privacidad  |</a>	
+	<a href="#">Política de protección de datos |</a>	
+	<a href="#">Política de cookies  |</a> 
+	<details>
+		<summary>©2004-2018.</summary>
+		<p>WebMaster ™. Todos los derechos reservados .</p>
+	</details>
+
+</footer>
+</main>
+</body>
+</html>
