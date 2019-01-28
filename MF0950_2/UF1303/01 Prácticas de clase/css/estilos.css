@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 90%;
+	margin: 0 auto;
+}   
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial, Helvetica, sans-serif;
+} 
+.nota {
+	background-color:#ffffcc; 
+	border-left: 6px solid #ffeb3b; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+table {
+	width:80%;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+}
+tr:nth-child(even) {
+	background-color: #eee;
+}
+p {
+	margin:0;
+	padding: 0;
+}
+#div_header {
+	overflow: hidden;
+	background-color: azure;
+}
+#div_header1 {
+	width: 135px; 
+	float: left;
+}
+#div_header2 {
+	float: left;
+}
+#div_header3 {
+	float: left;
+	margin: 20px;
+}
+
+.subir {
+	color: darkblue;
+}
+#divPadre {
+	border: 1px solid #cccccc;
+	background-color: #f1f1f1;
+	padding: 3px;
+	margin: 20px;
+}
+#divHead {
+	border: 1px solid #cccccc;
+	background-color: #f1f1f1;
+	padding: 3px;
+	margin:  20px;
+}
+#divBody {
+	border: 1px solid #cccccc;
+	background-color: #f1f1f1;
+	padding: 3px;
+	margin:  20px;
+}
+.divTitle {
+	border: 1px solid #cccccc;
+	background-color: #f1f1f1;
+	padding: 3px;
+	margin:  20px;
+	font-size:14px; 
+	color:Blue;
+}
+#divH1 {
+	border: 1px solid #cccccc;
+	background-color: white;
+	padding: 3px;
+	margin:  20px;
+}
+.divParrafo {
+	border: 1px solid #cccccc;
+	background-color: white;
+	padding: 3px;
+	margin:  20px;
+}
+hr {
+	border: 1px solid #eee;
+	margin: 5px 20px;
+}
+.etiquetashtml {
+	background-color: #f1f1f1;
+	border:1px solid #cccccc;
+	padding: 16px;
+	font-size: 24px;
+}
+code {
+	background-color: #f1f1f1;
+	color: crimson;
+	padding-left: 4pX;
+	padding-right: 4px;
+	font-size: 110%;
+}
+code span {
+	color: mediumblue;
+}
+code span span {
+	color:brown;
+}
+code span span span{
+	color: black;
+}
+.ejemplo {
+	background-color: #f1f1f1;
+	padding: 8px 16px;
+	margin: 20px 0;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) ; 
+}
+.code {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background-color: #ffffff;
+	padding: 8px 12px;
+	border-left: 4px solid #4Caf50;
+}
+.code code {
+	background-color: white;
+}
+dl dt {
+	margin-left: 35px;
+}
+a:link {
+  color: firebrick; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+	text-decoration: underline;}			
+
+footer {
+	background-color: black;
+	padding: 10px;
+}
+footer a:link{
+	color: white;
+}	
+

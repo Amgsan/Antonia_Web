@@ -9,7 +9,7 @@
     <meta name="author" content="Antonia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-		nav, div,  header, section, article, footer, aside, main, h1, h2, p {
+		nav, div,  header, section, article, footer, aside, main, h1, h2, h3, p {
 			margin: 0;
 			padding: 0;
 		}
@@ -27,18 +27,18 @@
 			color: white;
 			padding: 10px;
 		}
+		header p {
+			font-size: 20px;
+		}			
+        h1 {
+			font-size: 55px;
+			text-align: center;
+        }	
 		section {
 			display: block;
 			margin: 0;
 			padding: 0;
 		}
-        h1 {
-			font-size: 55px;
-			text-align: center;
-        }
-		header p {
-			font-size: 20px;
-		}		
 		.tituloseccion {
 			color: white; 
 			font-size: 20px;
@@ -65,10 +65,11 @@
 			width: 25%;
 			text-align: left;
 		}
-		#div_tecnologia, #div_videostec, #div_videojuegos {
+		.div_articulo {
 			overflow: hidden;
 			padding: 1%;
-			margin: 0;
+/*			margin: 0;*/
+			margin: auto;
 			background-color: white;
 		}
 		.img100 {
@@ -93,7 +94,6 @@
 		.articulo p {
 			font-size: 15px;
 			text-align: left;
-			/*color:black;*/
 		}	
 		.videotec {
 			width: 35%;		
@@ -201,8 +201,8 @@
 
 <section id="tecnologia">
 	<h2 class="tituloseccion">Tecnología</h2>
-	<div id="div_tecnologia">
-		<div class="articulo floatleft">
+	<div class="div_articulo">
+		<article class="articulo floatleft">
 			<img src="img/galaxy-note_9.jpg" alt="samsung galaxy note 9" class="img100">
 			<h2><a href="https://elpais.com/elpais/2018/10/31/escaparate/1540972323_286040.html" target="_blank">Análisis | Un mes con el Samsung Galaxy Note 9</a></h2>
 			<p class="opina">LAURA PÉREZ
@@ -213,8 +213,8 @@
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
 			</p><br>
 			<p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>			
-		</div>
-		<div class="articulo floatright">
+		</article>
+		<article class="articulo floatright">
 			<img src="img/honor-view20.jpg" alt="honorview20" class="img100">
 			<h2><a href="https://elpais.com/tecnologia/2019/01/21/actualidad/1548110580_761041.html" target="_blank">Honor View20, un móvil con más píxeles que ninguno</a></h2>
 			<p class="opina">ANA GÓMEZ
@@ -223,8 +223,8 @@
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
 			<p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
-		</div>			
-		<div class="articulo articulocentral">
+		</article>			
+		<article class="articulo articulocentral">
 			<img src="img/pocophone-f1.jpg" alt="pocophone" class="img100">
 			<h2><a href="https://elpais.com/elpais/2018/10/05/escaparate/1538727409_787464.html" target="_blank">Pocophone F1, ¿el mejor móvil en relación calidad-precio?</a></h2>
 			<p class="opina">ANTONIO SÁNCHEZ
@@ -232,9 +232,9 @@
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
 			<p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
-		</div>
+		</article>
 	</div>
-	<div id="div_videostec">
+	<div class="div_articulo">
 		<nav id="navleft" class="floatleft">
 			<img src="img/logo-vodafone.png" alt="vodafone">
 			<ul>
@@ -261,8 +261,8 @@
 </section>	
 <section id="videojuegos">
 	<h2 class="tituloseccion">Videojuegos</h2>
-	<div id="div_videojuegos">
-		<div class="articulo floatleft">
+	<div class="div_articulo">
+		<article class="articulo floatleft">
 			<img src="img/fornite.jpg" alt="fortnite" class="img100">
 			<h2><a href="https://as.com/meristation/2019/01/24/noticias/1548335513_179173.html" target="_blank">Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</a></h2>
 			<p class="opina">JOSÉ ORTIZ
@@ -273,7 +273,7 @@
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">			
 			</p><br>
 			<p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>			
-		</div>
+		</article>
 		<aside class="articulo floatright">
 			<h3>Contenido relacionado</h3>
 			<div class="miniarticulo">
@@ -296,7 +296,7 @@
 			<h2><a href="#">Call of Duty: Black Ops 4, Guía de logros y trofeos</a></h2>
 			</div>
 		</aside>		
-		<div class="articulo articulocentral">
+		<article class="articulo articulocentral">
 			<img src="img/gta5.jpg" alt="trucos GTA" class="img100">
 			<h2><a href="https://as.com/meristation/2019/01/16/trucos/1547655206_592305.html" target="_blank">Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</a></h2>
 			<p class="opina">PEDRO ZAMBRANO
@@ -306,7 +306,7 @@
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella">						
 			<img src="img/estrella_32x32.png" alt="estrella" class="estrella"></p><br>
 			<p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas</p>
-		</div>					
+		</article>					
 	</div>
 </section>
 <footer>
@@ -318,7 +318,6 @@
 		<summary>©2004-2018.</summary>
 		<p>WebMaster ™. Todos los derechos reservados .</p>
 	</details>
-
 </footer>
 </main>
 </body>
