@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Estilos CSS Bordes</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+</head>
+<body>
+<h1>Bordes CSS</h1>
+<hr>
+<h2>Estilos de los bordes</h2>
+<p>The <span class="etiqueta">border-style</span> property specifies what kind of border to display.</p>
+<p>The following values are allowed:</p>
+<ul>
+  <li><span class="negrita">dotted</span> - Defines a dotted border</li>
+  <li><span class="negrita">dashed</span> - Defines a dashed border</li>
+  <li><span class="negrita">solid</span> - Defines a solid border</li>
+  <li><span class="negrita">double</span> - Defines a double border</li>
+  <li><span class="negrita">groove</span> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+  <li><span class="negrita">ridge</span> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+  <li><span class="negrita">inset</span> - Defines a 3D inset border. The effect depends on the border-color value</li>
+  <li><span class="negrita">outset</span> - Defines a 3D outset border. The effect depends on the border-color value</li>
+  <li><span class="negrita">none</span> - Defines no border</li>
+  <li><span class="negrita">hidden</span> - Defines a hidden border</li>
+</ul>
+<p>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<p class="ej">Ejemplos:</p>
+<p class="dotted">Borde "dotted"</p>
+<p class="dashed">Borde dashed.</p>
+<p class="solid">Borde solid.</p>
+<p class="double">Borde doubler.</p>
+<p class="groove">Borde groove.</p>
+<p class="ridge">Borde ridge.</p>
+<p class="inset">Borde inset.</p>
+<p class="outset">Borde outset.</p>
+<p class="none">Sin borde.</p>
+<p class="hidden">Borde hidden.</p>
+<p class="mix">Borde mixed.</p>
+<hr>
+<h2>Ancho de los bordes</h2>
+<p>The <span class="etiqueta">border-width</span> property specifies the width of the four borders.</p>
+<p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</p>
+<p>The <span class="etiqueta">border-width</span> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<p class="ej">Ejemplos:</p>
+<p class="bordepuntos2px">Borde puntos 2px</p>
+<p class="bordedoble20px">Borde doble de 20px (double)</p>
+<p class="bordepuntosdelgado">Borde de puntos delgado (thick)</p>
+<p class="bordesolidomedio">Borde sólido de grosor medio (medium)</p>
+<p class="bordesolido5px">Borde sólido de 5px</p>
+<p class="bordedobledelgado">Borde doble delgado (thick)</p>
+<p class="bordesolidomixto">Borde solido de distinto grosor cada lado</p>
+<hr>
+<h2>Color de los bordes</h2>
+<p>The <span class="etiqueta">border-color</span> property is used to set the color of the four borders.</p>
+<p>The color can be set by:</p>
+<ul>
+  <li>name - specify a color name, like "red"</li>
+  <li>Hex - specify a hex value, like "#ff0000"</li>
+  <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+  <li>transparent</li>
+</ul>
+<p>The <span class="etiqueta">border-color</span> property can have from one to four values (for the top border, right border, bottom border, and the left border). </p>
+<p>If <span class="etiqueta">border-color</span> is not set, it inherits the color of the element.</p>
+<p class="bordenaranja">Borde de color naranja</p>
+<p class="bordemixto">Bordes de distintos colores</p>
+<hr>
+<h2>Bordes individuales</h2>
+<p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+<p class="ej">Ejemplos:</p>
+<p class="bordesvariosestilos">Ejemplo de varios estilos dando bordes individuales:	{border-top-style: dotted; border-bottom-style: double; border-right-style: solid; border-left-style: inset;}</p>
+<hr>
+<h2>Forma abreviada de dar estilo a los bordes</h2>
+<p>As you can see from the examples above, there are many properties to consider when dealing with borders.</p>
+<p>To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+<p>The <span class="etiqueta">border</span> property is a shorthand property for the following individual border properties:</p>
+<ul>
+  <li><span class="etiqueta">border-width</span></li>
+  <li><span class="etiqueta">border-style</span>(obligatoria)</li>
+  <li><span class="etiqueta">border-color</span></li>
+</ul>
+<p class="ej">Ejemplos:</p>
+<p class="bordeabreviado">Ejemplo de estilo de un borde de forma abreviada: {border:  5px dashed  #409860;}</p>
+<hr>
+<h2>Borde izquierdo</h2>
+<p class="pbordeizquierdo">Ejemplo de párrafo con borde izquierdo</p>
+<hr>
+<h2>Bordes redondeados</h2>
+<p>The <span class="etiqueta">border-radius</span> property is used to add rounded borders to an element:</p>
+<div class="divradius borderradius1"></div>
+<div class="divradius borderradius2"></div>
+<div class="divradius borderradius3"></div>
+<div class="divradius borderradius4"></div>
+</body>
+</html>

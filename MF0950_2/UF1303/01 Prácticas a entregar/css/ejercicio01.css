@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: lightgoldenrodyellow;
+	width: 90%;
+	margin: 20px;
+	padding: 15px;
+	border: 1px solid #C7C2C1;
+	box-shadow: 5px 5px 16px #C3BEBE;
+	line-height: 150%;
+	font-family: arial;
+	font-size: 110%;
+}
+h1 {
+	background-color: brown;
+	text-transform: uppercase;
+	border: 1px solid brown;
+	text-align: center;
+	letter-spacing: 3px;
+}
+h2 {
+	border-top: 2px dotted brown;
+	border-bottom: 2px dotted brown;	
+	text-align: center;
+}
+h3 {
+	border-top: 2px dashed brown;
+	border-bottom: 2px dashed brown;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;	
+}
+mark {
+	background-color: yellow;
+	border: 1px solid brown;
+	padding: 10px;
+	color:#630986;
+	text-shadow: 4px 4px 8px darkgrey;
+}
+p, ul {
+	border: 2px solid brown;
+	border-radius: 15px;
+	box-shadow:  5px 5px 16px #C3BEBE;
+	padding: 15px;
+}
+abbr {
+	border: 1px solid green;
+	padding: 3px;
+	color: brown;
+	text-decoration-line: none;
+}
+cite {
+	color:blue;
+	font-weight: bold;
+}
+q, strong, i, em, sup {color: brown;}
+q{quotes: "« " " »"; color: black;}
+b {color: blue;}
+u {text-decoration-color: blue;}
+del, s, ins {text-decoration-color: brown;}
+hr {width: 18%; height: 2px; background-color: grey;margin-top:50px; margin-bottom: 50px;}
+blockquote {text-indent: 50px; text-align: justify;}
+span {
+	border: 2px solid brown;
+	border-radius: 15px;
+	box-shadow:  5px 5px 16px #C3BEBE;
+	padding: 15px;	
+	text-align: center;
+	display: block;
+	width: 95%;
+	margin: auto;
+}
+
+li {
+	margin-left: 30px;
+	list-style-image: url(../img/lista-icono.png)
+}
+
