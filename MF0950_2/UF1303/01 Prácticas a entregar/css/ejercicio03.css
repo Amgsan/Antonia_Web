@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4, h5, h6, ul, li, img, figure, a {
+	margin:0;
+	padding: 0;
+}
+body {
+	width: 90%;
+	margin: auto;
+	border: 1px solid grey;
+	font-family:arial;
+}
+#cabecera {
+	background-color: #2D64A6;
+	color:antiquewhite;
+	overflow: hidden;
+	padding: 20px;
+}
+#cabecera img {
+	float: left;
+	width: 100px;
+}
+
+h1 {
+	margin: 10px;
+}
+#navegacion {
+	background-color:#A0BBD8;
+	padding: 20px;
+	text-align: center;
+	color:#112582;
+}
+#menu {
+	list-style-type: none;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+}
+#menu li a {
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	background-color: white;
+	border: 2px solid blue;
+	border-radius: 5px;
+	color: grey;
+}
+#principal {
+	background-color:#CCCCCC;
+}
+#seccion {
+	background-color:#96BBC8;
+	padding: 5px;
+	margin: 5px;
+}
+#listaseccion {
+	list-style-type: none;
+	text-align: left;
+}
+#listaseccion li {
+	display: inline-block;
+	width: 45%;
+	border: 2px solid black;
+	margin: 10px;
+	padding: 10px;
+	background-color: #EBE2BF;
+}
+#listaseccion li a{
+	display: block;
+}
+#articulo1 figure img{
+	width: 100%;
+	text-align: center;
+}
+#articulo1 figcaption{
+	font-size: 9px;
+}
+#articulo1 h3 {
+	color:blue;
+}
+#articulo2 figure img{
+	width: 100%;
+	text-align: center;
+}
+#articulo2 figcaption{
+	font-size: 9px;
+}
+#articulo2 h3 {
+	color:blue;
+}
+.txtjustificado {
+	text-align: justify;
+}
+#boton1 {
+	color: white;
+	background-color:#256CC1;
+	padding: 10px;
+	width: 90px;
+	text-align:center;
+	text-decoration: none;
+}
+#boton2 {
+	color: white;
+	background-color:#256CC1;
+	padding: 10px;
+	width: 90px;
+	text-align:center;
+	text-decoration: none;
+}
+#aside {
+	background-color:#3A88A8;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 20px;
+}
+#aside h3 {
+	margin: 10px;
+}
+#lista1aside {
+	list-style-type: none;
+	text-align: center;
+}
+#lista1aside li {
+	width: 28%;
+	border: 2px solid black;
+	display: inline-block;
+	background-color: antiquewhite;
+	padding: 10px;
+	margin: 5px;
+}
+#lista1aside img {
+	width: 100%;
+	text-align: center;
+}
+#lista2aside {
+	list-style-type: none;
+	text-align: center;
+}
+#lista2aside li {
+	width: 20%;
+	border: 2px solid black;
+	display: inline-block;
+	background-color: antiquewhite;
+	padding: 10px;
+	margin: 5px;
+}
+#lista2aside img {
+	width: 100%;
+	text-align: center;
+}
+#footer {
+	color:#B7A06F;
+	text-align: center;
+	background-color: #062F80;
+	font-size: 12px;
+}
+#listafooter {
+	width: 90%;
+	list-style-type: none;
+	text-align: center;
+	margin: auto;
+}
+#listafooter li {
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid black;
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+	font-size: 10px;
+	background-color:#EBE2BF;
+	text-align: left;
+	height: 220px;
+}
+#listafooter p {
+	color:blue;
+}
+
+#redes {
+	list-style-type: none;
+	background-color:#EBE2BF;
+	text-align: left;
+}
+#redes li {
+	margin: 0;
+	background-color:#EBE2BF;
+	border: none;
+	width: 80%;
+	height: auto;
+}
+#redes li a {
+	text-decoration: none;
+	color: black;
+}
+#redes img {width: 20px;height: 20px; vertical-align:-0.7em; margin-right: 5px;margin-left:5px;}
+#redes p {
+	color:black;
+}
+
+#contacto {
+	list-style-type: none;
+	margin: 0;
+	background-color:#EBE2BF;
+	text-align: left;
+}
+#contacto li {
+	margin-left: 5px;
+	background-color:#EBE2BF;
+	border: none;
+	width: 80%;
+	margin: 0;
+	height: auto;
+}
+#contacto li a {
+	text-decoration: none;
+	color: black;
+}
+#contacto img {width: 20px;height: 20px; vertical-align:-0.7em; margin-right: 5px;margin-left:5px;}
+#contacto p {
+	color:black;
+}
+
+#documentacion {
+	list-style-type: none;
+	margin: 0;
+	background-color:#EBE2BF;
+	text-align: left;
+}
+#documentacion li {
+	margin-left: 5px;
+	background-color:#EBE2BF;
+	border: none;
+	width: 80%;
+	margin: 0;
+	height: auto;	
+}
+#documentacion li a {
+	text-decoration: none;
+	color: black;
+}
+#documentacion img {width: 20px;height: 20px; vertical-align:-0.7em; margin-right: 5px;margin-left:5px;}
+#documentacion p {
+	color:black;
+}
