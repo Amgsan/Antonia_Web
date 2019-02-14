@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo clases</title>
+<style>
+	body {
+		font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif; 
+		font-size: 1.2em; 
+		width:80%; 
+		margin: 10px auto;
+		border: 1px solid black;
+	}
+	#div1 p {background-color: yellow;}
+	#div2 > p {background-color: yellow;}
+	#div3 + p {background-color: yellow;}
+	#div4 ~ p {background-color: yellow;}
+	h2 + p {color: blue;}
+	.rojo {color:red;}
+	.primeralinea p::first-line {
+		color: green;
+		font-variant: small-caps;
+	}	
+	.primeraletra p::first-letter {
+		color: #ff0000;
+		font-size: xx-large;
+	}
+	#before h1::before {
+	  content: url(../img/iconos/cookies.png);
+	}
+	#after h1::after {
+	  content: url(../img/iconos/auricular-phone.png);
+	}
+	#selection ::-moz-selection { /* Code for Firefox */
+	  color: red;
+	  background: yellow;
+	}
+	#selection ::selection {
+	  color: red;
+	  background: yellow;
+	}
+</style>
+</head>
+<body>
+
+<h1>Combinadores CSS</h1>
+<hr>
+<h2>Selector descendiente</h2>
+<p>div p {background-color: yellow;}</p>
+<p>Selecciona todos los descendientes de un tipo determinado de un elemento determinado</p>
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+	  <p>Paragraph 2 in the div.</p>
+	  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<hr>
+<h2>Selector hijo</h2>
+<p>div &gt; p {background-color: yellow;}</p>
+<p>Selecciona todos los elementos que son hijos inmediatos de un elemento específico</p>
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<hr>
+<h2>Selector de hermanos adyacentes</h2>
+<p>div  + p {background-color: yellow;}</p>
+<p>Selecciona todos los elementos que son los hermanos adyacentes de un elemento específico. Deben de tener el mismo padre y estar inmediatamente después.</p>
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+<hr>
+<h2>Selector general entre hermanos</h2>
+<p>div ~ p {background-color: yellow;}</p>
+<p>Selecciona hermanos directos de un elemento determinado</p>
+<p>Paragraph 1.</p>
+<div id="div4">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+<!-- --------------------------- -->
+<hr>
+<div>
+<h1>CSS Pseudo-elementos</h1>
+<hr>
+<h2>Primera línea <span class="rojo">::first-line</span></h2>
+<p>p::first-line {color: #ff0000;font-variant: small-caps;}</p>
+<div class="primeralinea">	
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</div>
+<hr>
+<h2>Primera letra <span class="rojo">::first-letter</span></h2>
+<p>p::first-letter {color: #ff0000;font-variant: small-caps;}</p>
+<div class="primeraletra">	
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</div>
+<hr>
+<h2>Multiples pseudo-elementos</h2>
+<p>p::first-letter {color: #ff0000;font-size: xx-large;} p::first-line{color: #0000ff;font-variant: small-caps;}</p>
+<div class="primeralinea primeraletra">
+	<p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+</div>	
+<hr>
+<h2>Pseudo-elemento <span class="rojo">::before</span></h2>
+<p>h1::before {content: url(../img/iconos/cookies.png);}</p>
+<div id="before">
+	<h1>This is a heading</h1>
+	<p>The ::before pseudo-element inserts content before the content of an element.</p>
+	<h1>This is a heading</h1>
+	<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+</div>
+<hr>
+<h2>Pseudo-elemento <span class="rojo">::after</span></h2>
+<p>h1::after {content: url(smiley.gif);}</p>
+<div id="after">
+	<h1>This is a heading</h1>
+	<p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+	<h1>This is a heading</h1>
+	<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+</div>
+<hr>
+<h2>Pseudo-elemento <span class="rojo">::selection</span></h2>
+<p>::-moz-selection { /* Code for Firefox */color: red;background: yellow;}::selection {  color: red;
+  background: yellow;}</p>
+<div id="selection">
+	<h1>Select some text on this page:</h1>
+	<p>This is a paragraph.</p>
+	<div>This is some text in a div element.</div>
+	<p><strong>Note:</strong> ::selection is not supported in Internet Explorer 8 and earlier versions.</p>
+	<p><strong>Note:</strong> Firefox supports an alternative, the ::-moz-selection property.</p>	
+</div>
+
+
+
+
+</div>
+</body>
+</html>

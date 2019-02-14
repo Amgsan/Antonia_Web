@@ -1,0 +1,668 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documento sin título</title>
+<style>
+	.flex-contenedor {
+		display: flex; /* propiedad que define la flexión */
+		background-color: hotpink;
+		border: 1px solid blue;		
+	}
+	.flex-contenedor > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color: lemonchiffon;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*---------------------------------*/	
+	.flex-contenedor2 {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: row; /* propiedad que define la dirección */
+		background-color: hotpink;
+		border: 1px solid blue;		
+	}	
+	.flex-contenedor2 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color: lemonchiffon;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+	.flex-contenedor22 {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: column; /* propiedad que define la dirección */
+		background-color: hotpink;
+		border: 1px solid blue;	
+	}	
+	.flex-contenedor22 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color: lemonchiffon;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+	/*---------------------------------*/	
+	.flex-contenedor3 {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: row;
+		flex-wrap: wrap; /* propiedad que define la dirección */
+		background-color: hotpink;
+		border: 1px solid blue;		
+	}	
+	.flex-contenedor3 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color: lemonchiffon;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+/*---------------------------------*/	
+	.flex-contenedor31 {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: row;
+		flex-wrap: nowrap;
+		background-color: hotpink;
+		border: 1px solid blue;		
+	}	
+	.flex-contenedor31 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color: lemonchiffon;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+/*---------------------------------*/	
+	.flex-contenedor41 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		justify-content: flex-start; /* propiedad que define la justificación */
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor41 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+	/*---------------------------------*/	
+	.flex-contenedor42 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		justify-content: flex-end; /* propiedad que define la justificación */
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor42 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*---------------------------------*/	
+	.flex-contenedor43 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		justify-content: center; /* propiedad que define la justificación */
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor43 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+	.flex-contenedor44 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		justify-content: space-around; /* propiedad que define la justificación */
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor44 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*---------------------------------*/	
+	.flex-contenedor45 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		justify-content: space-between; /* propiedad que define la justificación */
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor45 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*----------*/
+	.flex-contenedor40 {
+		display: flex;
+		border: 2px solid black;
+	}
+	.texto {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		width: 30%;
+	}
+	.cajas {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 70%;		
+	}
+	.flex-txt {
+		font-size: 1.5em;
+		margin-left: 10px;
+		background-color: red;
+		color: white;
+	}
+	/*---------------------------------*/	
+	.flex-contenedor51 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content: flex-start; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor51 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+	/*---------------------------------*/	
+	.flex-contenedor52 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content: flex-end; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor52 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+	/*---------------------------------*/	
+	.flex-contenedor53 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content: center; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor53 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+	/*---------------------------------*/	
+	.flex-contenedor54 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content:space-around; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor54 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+/*---------------------------------*/	
+	.flex-contenedor55 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content:space-between; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor55 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+/*---------------------------------*/	
+	.flex-contenedor56 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-content:stretch; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor56 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+/*---------------------------------*/	
+	.flex-contenedor61 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-items:flex-start; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor61 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+/*---------------------------------*/	
+	.flex-contenedor62 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-items:flex-end; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor62 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+	/*---------------------------------*/	
+	.flex-contenedor63 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-items:center; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor63 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}		
+/*---------------------------------*/	
+	.flex-contenedor64 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-items:stretch; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor64 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}	
+/*---------------------------------*/	
+	.flex-contenedor65 {
+		display: flex; /* propiedad que define la flexión */
+		flex-flow: row wrap; /* propiedad que define dirección y wrap/nowrap de forma abreviada */
+		align-items:baseline; /* propiedad que define la alineación vertical */
+		height: 300px;
+		background-color: #928AD7;
+		border: 1px solid #D0B391;		
+	}	
+	.flex-contenedor65 > div { /* herederos directos del padre */
+		border: 3px solid black;
+		background-color:#E5AFC7;
+		font-size: 3em;
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+	}				
+</style>
+
+</head>
+
+<body>
+
+<h2>Display: flex</h2>
+<div class="flex-contenedor">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+</div>
+<hr>
+<h2>Flex-direction: row </h2>
+<div class="flex-contenedor2">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Flex-direction: column </h2>
+<div class="flex-contenedor22">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Flex-wrap: wrap </h2>
+<div class="flex-contenedor3">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>
+</div>
+<h2>Flex-wrap: nowrap </h2>
+<div class="flex-contenedor31">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>
+</div>
+<h1>Justify-content: alineación horizontal</h1>
+<h2>Justify-content: flex-start</h2>
+<div class="flex-contenedor41">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Justify-content: flex-end </h2>
+<div class="flex-contenedor42">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Justify-content: center </h2>
+<div class="flex-contenedor43">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Justify-content: space-around </h2>
+<div class="flex-contenedor44">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+<h2>Justify-content: space-between </h2>
+<div class="flex-contenedor45">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+</div>
+
+<hr>
+<hr>
+
+<h1>Justify-content</h1>
+<div class="flex-contenedor40">
+	<div class="texto">
+		<div class="flex-txt">Justify-content: flex-start</div>
+		<div class="flex-txt">Justify-content: flex-end </div>
+		<div class="flex-txt">Justify-content: center </div>
+		<div class="flex-txt">Justify-content: space-around </div>
+		<div class="flex-txt">Justify-content: space-between </div>
+	</div>
+	<div class="cajas">
+		<div class="flex-contenedor41">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>	
+		</div>
+		<div class="flex-contenedor42">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>	
+		</div>
+		<div class="flex-contenedor43">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>	
+		</div>
+		<div class="flex-contenedor44">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>	
+		</div>
+		<div class="flex-contenedor45">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>	
+		</div>
+	</div>
+</div>
+<hr>
+<h1>Align-content: alineación vertical</h1>
+<h2>Align-content: flex-start</h2>
+<div class="flex-contenedor51">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-content: flex-end </h2>
+<div class="flex-contenedor52">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-content: center </h2>
+<div class="flex-contenedor53">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-content: space-around </h2>
+<div class="flex-contenedor54">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-content: space-between </h2>
+<div class="flex-contenedor55">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-content: stretch </h2>
+<div class="flex-contenedor56">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<hr>
+<h1>Align-item</h1>
+<h2>Align-item: flex-start</h2>
+<div class="flex-contenedor61">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>		
+</div>
+<h2>Align-item: flex-end </h2>
+<div class="flex-contenedor62">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>			
+</div>
+<h2>Align-item: center </h2>
+<div class="flex-contenedor63">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>			
+</div>
+<h2>Align-item: stretch</h2>
+<div class="flex-contenedor64">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+<h2>Align-item: baseline </h2>
+<div class="flex-contenedor65">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>	
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>	
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>	
+	<div>10</div>	
+</div>
+
+</body>
+</html>

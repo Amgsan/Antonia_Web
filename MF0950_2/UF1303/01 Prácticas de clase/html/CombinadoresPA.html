@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Pseudo Clases</title>
+<style>
+	
+/*Responsive*/
+	
+@media screen and (max-width: 1024px) {
+	body {background-color: white;}
+	div.flex-container {width:100%;}
+}
+@media screen and (max-width: 800px) {
+	body {background-color: antiquewhite;}
+	div.flex-container {width:50%;}
+}
+@media screen and (max-width: 600px) {
+	body {background-color: tomato;}
+	div.flex-container {flex-direction: column;}
+}
+@media screen and (max-width: 480px) {
+	body {background-color: lightgreen;}
+}
+	
+*{box-sizing: border-box:}
+	
+	body{
+		font-family:Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		width:90%;
+		margin: 10px auto;
+		border: 1px solid black;
+	}
+#div1 p {
+  background-color: yellow;
+}	
+	
+#div2 > p {
+  background-color: yellow;
+}
+
+#div3 + p {
+  background-color: yellow;
+}
+	
+#div4 ~ p {
+  background-color: yellow;
+}
+	
+h2 + p {
+	color: crimson;
+	font-weight: bold;
+	}
+	
+#div5 p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+	
+#div6 p::first-letter {
+  color: #ff0000;
+}
+</style>
+</head>
+
+<body>
+<h1>Combinadores CSS, pseudoclases y pseudoelementos</h1>
+<hr>
+<h2>Combinadores CSS</h2>
+<hr>
+<style>
+	.flex-container {
+		display:flex;
+		flex-direction: row; /* column */
+		background-color: dodgerblue;
+		flex-wrap: wrap; /* nowrap */
+		justify-content: space-between; /* center */
+		align-items:flex-start;
+		align-content: space-between;
+	}	
+	
+	.flex-container > div {
+		background-color: #f1f1f1;
+		margin:10px;
+		padding: 10px;
+		width: 20%;
+		/* width: 100px; */
+	}
+</style>
+
+<div class="flex-container">
+	<div>
+		<h2>Selector descendiente</h2>
+<p>div p {
+background-color: yellow;}</p>
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+	</div>
+	<div>
+	<h2>Selector hijo</h2>
+<p>div &gt; p {
+background-color: yellow;}</p>
+
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+	</div>
+	<div><h2>Selector adyacente</h2>
+<p>div + p {background-color: yellow;}</p>
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragrap</p></div>
+	<div><h2>Selector general entre hermanos</h2>
+<p>#div4 ~ p {background-color: yellow;}</p>
+<p>Paragraph 1.</p>
+
+<div id="div4">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p></div>
+</div>
+
+<hr>
+<h1>Pseudo elementos</h1>
+<h2>La primera línea</h2>
+<div id="div5">
+<p>p::first-line {color: #ff0000;
+font-variant: small-caps;}</p>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</div>
+<h2>La primera letra</h2>
+<div id="div6">
+<p>p::first-letter {color: #ff0000;
+font-size: xx-large;}</p>
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+</div>
+
+</body>
+</html>
