@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4, h5, h6, ul, li, img, figure, a {
+	margin:0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+* img:hover {
+	opacity: 0.8;
+}
+body {
+	width: 80%;
+	margin: auto;
+	border: 1px solid grey;
+	font-family:arial;
+}
+header {
+	width: 100%;
+}
+#divheader {
+	background-color: #2140A0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+#logo {
+	padding: 20px;
+	width: 25%;
+}
+
+#navpadre {
+	width: 75%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+}
+#nav1 {
+	display: flex;
+	align-items: flex-end;
+	background-color: #001873;
+	padding: 8px;
+	margin: 0 100px 0 100px;
+}
+#nav2 {
+	display: flex;
+	padding:10px;
+	margin-right: 100px;
+}
+#nav1 a {
+	color:#D6C7DB;
+	font-size: 0.7em;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+}
+#nav2 a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+}
+#sec1 {
+	position: relative;
+}
+#imgppal {
+	width: 100%;
+	box-shadow: 0 4px yellow;
+	border: none;
+}
+#infoqatar {
+	color: white;
+	background-color: rgba(3,3,3,0.61);
+	width: 30%;
+	height: 80%;
+	position: absolute;
+	top: 40px;
+	right: 10%;
+	padding: 15px;
+	z-index: 1;
+	border-top: 4px solid yellow;
+}
+.botonnegro {
+	border: 1px solid white;
+	background-color: black;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+}
+.botonazul {
+	text-align: right;
+	margin-right: 10px;
+}
+.botonazul >a {
+	background-color:#3C65D7;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.8em;
+}
+.txtgrande {
+	font-size: 1.4em;
+}
+.txtpeq {
+	font-size: 0.8em;
+}
+.txtazulclaro {
+	color:aqua;
+}
+.txtblanco {
+	color: white;
+}
+.seccentral {
+	margin: 30px 10px;
+	display: flex;
+	flex-flow: column wrap;
+	border: none;
+}
+#sec2imagenes {
+	display: flex;
+}
+#sec2imagenes > div  {
+	width: 33%;
+	margin: 10px;
+	border: 1px solid #D7D7D7;
+	box-shadow: 0 2px grey;
+	position: relative;
+}
+#sec2imagenes > div > img  {
+	width: 100%;
+}
+#sec3imagenes {
+	display: flex;
+}
+#sec3imagenes > div  {
+	width: 25%;
+	margin: 10px;
+	border: 1px solid #D7D7D7;
+	box-shadow: 0 2px grey;
+	position: relative;
+}
+#sec3imagenes > div > img  {
+	width: 100%;
+}
+#sec4imagenes {
+	display: flex;
+}
+#sec4imagenes > div  {
+	width: 50%;
+	margin: 10px;
+	border: 1px solid #D7D7D7;
+	box-shadow: 0 2px grey;
+	position: relative;
+}
+#sec4imagenes > div > img  {
+	width: 100%;
+}
+.tituloimg {
+	position: absolute;
+	bottom: 25%;
+	left: 5%;
+	color: white;
+	z-index: 1;
+	font-weight: 700;
+}
+.ofertas {
+	text-align: right;
+	margin:8px;
+}
+.ofertas a {
+	text-decoration: none;
+	color: grey;
+	font-size: 1.2em;
+}
+.padleft10 {
+	padding-left: 10px;
+}
+#reservas {
+	display: flex;
+	text-align: center;
+}
+#reservas > div{
+	width: 33%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#divreservas {
+	padding: 10px;
+	color: white;
+	background-color: #0C3B9A;
+	text-align: center;
+	position: relative;
+}
+#divreservas hr {
+	line-height: 4px solid grey;
+}
+#titdivreservas {
+	position: absolute;
+	top: 8%;
+	left:35%;
+	padding: 0 15px;
+	background-color: #0C3B9A;
+}
+#rrss {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#politicas {
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#politicas a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+}
+#politicas a:hover {
+	color: grey;
+}
