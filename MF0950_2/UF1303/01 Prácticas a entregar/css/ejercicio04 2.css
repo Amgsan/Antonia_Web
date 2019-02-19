@@ -11,6 +11,8 @@ header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4
 * img:hover {
 	opacity: 0.8;
 }
+
+/**/
 body {
 	width: 80%;
 	margin: auto;
@@ -51,17 +53,18 @@ header {
 }
 #nav1 a {
 	color:#D6C7DB;
-	font-size: 0.7em;
 	text-decoration: none;
 	padding: 10px;
 	text-align: center;
 }
 #nav2 a {
 	color: white;
-	font-size: 1em;
 	text-decoration: none;
 	padding: 10px;
 	text-align: center;
+}
+#nav2 :hover {
+	color: rgba(147,201,215,1.00);
 }
 #sec1 {
 	position: relative;
@@ -75,26 +78,29 @@ header {
 	color: white;
 	background-color: rgba(3,3,3,0.61);
 	width: 30%;
-	height: 70%;
+	height: auto;
 	position: absolute;
 	top: 40px;
 	right: 10%;
-	padding: 15px;
+	padding: 10px;
 	z-index: 1;
 	border-top: 4px solid yellow;
 }
-#infoqatar > img {width: 100%;}
+#infoqatar > img {width:100%;}
+#infoqatar > p {margin: 0.8em 0;}
+.infobotonnegro {padding: 0.8em 0; margin: 0 0 0.5em 0;;}
 .botonnegro {
 	border: 1px solid white;
 	background-color: black;
 	text-decoration: none;
 	color: white;
-	padding: 10px;
+	padding: 0.8em;
 	border-radius: 3px;
+	margin: 0 0 1.2em 0;
 }
 .botonazul {
 	text-align: right;
-	margin-right: 10px;
+	margin: 0 0 1.2em 0;
 }
 .botonazul >a {
 	background-color:#3C65D7;
@@ -102,11 +108,7 @@ header {
 	color: white;
 	padding: 10px;
 	text-align: center;
-	font-size: 0.8em;
 }
-.txtsupergrande {font-size: 1.8em;}
-.txtgrande {font-size: 1.4em;}
-.txtpeq {font-size: 0.8em;}
 .txtazulclaro {
 	color:aqua;
 }
@@ -114,7 +116,7 @@ header {
 	color: white;
 }
 .seccentral {
-	margin: 30px 10px;
+	margin: 40px 10px;
 	display: flex;
 	flex-flow: column wrap;
 	border: none;
@@ -134,16 +136,13 @@ header {
 .sec3imagenes > div  {width: 33%;}
 .sec4imagenes > div  {width: 25%;}
 .sec2imagenes > div  {width: 50%;}
-
 .tituloimg {
 	position: absolute;
 	bottom: 25%;
 	left: 5%;
 	color: white;
 	z-index: 1;
-	font-size: 1.1em;
 	font-weight: 700;
-	text-shadow: 1px 1px rgba(209,202,202,1.00);
 }
 .ofertas {
 	text-align: right;
@@ -152,7 +151,6 @@ header {
 .ofertas a {
 	text-decoration: none;
 	color: grey;
-	font-size: 1em;
 }
 .padleft10 {
 	padding-left: 10px;
@@ -160,6 +158,7 @@ header {
 #reservas {
 	display: flex;
 	text-align: center;
+	margin: 1em 0 0 0;
 }
 #reservas > div{
 	width: 33%;
@@ -178,10 +177,16 @@ header {
 }
 #titdivreservas {
 	position: absolute;
-	top: 8%;
-	left:35%;
-	padding: 0 15px;
-	background-color: #0C3B9A;
+	width: 40%;
+	left: 30%;
+	right: 50%;
+	background-color:#0C3B9A;
+	top: 5%;
+	
+/*	top: 8%;
+	left:35%;*/
+/*	padding: 0 15px;*/
+/*	background-color: #0C3B9A;*/
 }
 #rrss {
 	padding: 10px;
@@ -200,8 +205,71 @@ header {
 #politicas a {
 	text-decoration: none;
 	color: white;
-	font-size: 0.7em;
 }
 #politicas a:hover {
 	color: grey;
+}
+
+/**/
+@media screen and (max-width: 2000px) {
+	body {font-size: 1em;}
+	#nav1 a {font-size: 0.7em;}	
+	#nav2 a {font-size: 1em;}		
+	.botonazul {font-size: 1em;}
+	.txtsupergrande {font-size: 1.6em;}
+	.txtgrande {font-size: 1.4em;}
+	.txtpeq {font-size: 0.8em;}
+	.tituloimg {font-size: 1em;}
+	#politicas a {font-size: 0.7em;}
+	.ofertas a {font-size: 0.9em;}
+	#titdivreservas {font-size: 1em;}
+}
+@media screen and (max-width: 800px) {
+  	body {font-size: 1em;}
+	#nav1 a {font-size: 0.7em;}	
+	#nav2 a {font-size: 0.8em;}		
+	.botonazul {font-size: 1em;}
+	.txtsupergrande {font-size: 1.5em;}
+	.txtgrande {font-size: 1em;}
+	.txtpeq {font-size: 0.7em;}
+	.tituloimg {font-size: 0.9em;}
+	#politicas a {font-size: 0.6em;}
+	.ofertas a {font-size: 0.8em;}	
+	#titdivreservas {font-size: 1em;}	
+}
+@media screen and (max-width: 600px) {
+  	body {font-size: 1em;}
+	#nav1 a {font-size: 0.6em;}	
+	#nav2 a {font-size: 0.8em;}		
+	.botonazul {font-size: 0.8em;}
+	.txtsupergrande {font-size: 1.2em;}
+	.txtgrande {font-size: 1.2em;}
+	.txtpeq {font-size: 0.8em;}
+	.tituloimg {font-size: 1em;}
+	#politicas a {font-size: 0.5em;}
+	.ofertas a {font-size:0.8em;}
+	#divheader {justify-content: center;}
+	#logo {width:100%}	
+	#nav1 {visibility: hidden;}
+	#nav1 {display: none;;}
+	#nav2 {flex-flow: column nowrap;}
+	.secimagenes {flex-flow: column nowrap;}
+	.secimagenes div {width:100%}
+	#reservas {flex-flow: column nowrap;}
+	#reservas div {width:100%}	
+	#titdivreservas {font-size: 1em;}	
+	#infoqatar {
+		width: 80%;
+		margin: auto;
+		height: 80%;
+		top: 10%;
+		overflow: hidden;
+	}	
+	#infoqatar > img {
+		width: 30%;
+		margin: auto;
+		height: auto;
+		top: 20px;}		
+	#fl {float: left;}
+	#fl {float: right;}
 }

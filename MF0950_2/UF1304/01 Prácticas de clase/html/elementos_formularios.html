@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Elementos de un formulario</title>
+</head>
+
+<body>
+
+<h2>Elementos de un formulario:</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td>
+      <td>Defines an HTML form for user input</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td>
+      <td>Defines an input control</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
+      <td>Defines a multiline input control (text area)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a></td>
+      <td>Defines a label for an &lt;input&gt; element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+      <td>Groups related elements in a form</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_legend.asp">&lt;legend&gt;</a></td>
+      <td>Defines a caption for a &lt;fieldset&gt; element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a></td>
+      <td>Defines a drop-down list</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+      <td>Defines a group of related options in a drop-down list</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a></td>
+      <td>Defines an option in a drop-down list</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a></td>
+      <td>Defines a clickable button</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
+      <td>Specifies a list of pre-defined options for input controls</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output&gt;</a></td>
+      <td>Defines the result of a calculation</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Elemento &lt;input&gt;</h2>
+<p>El elemento &lt;input&gt; puede mostrarse de múltiples formas, dependiendo del tipo de atributo.</p>
+<p>&lt;input name="firstname" type="text"&gt;</p>
+<p>Si se omite el atributo type, el valor por defecto es type: "text".</p>
+<form action="/action_page.php" method="post" name="formulario1" accept-charset="UTF-8" autocomplete="off" novalidate target="_blank">
+ <fieldset>
+		<legend>Datos personales</legend>
+		Introduce tu nombre:
+		<input name="nombre" type="text">
+		<br><br>
+		Apellido:
+		<input name="apellido" type="text">
+		<br><br>
+	<input type="submit" value="enviar">
+  </fieldset>
+</form>
+<p>&lt;input type="text"&gt;</p>
+<p>&lt;input type="password"&gt;</p>
+<p>&lt;input type="submit"&gt;</p>
+<p>&lt;input type="reset"&gt;</p>
+<p>&lt;input type="radio"&gt;</p>
+<p>&lt;input type="checkbox"&gt;</p>
+<p>&lt;input type="button"&gt;</p>
+
+<form action="/action_page.php">
+  <fieldset>
+ 		<legend>Datos personales</legend>
+			Nombre:
+			<input type="text" name="nombre" value=""><br><br>
+			Apellido:
+			<input type="text" name="apellido" value=""><br><br>
+			Password:
+			<input type="password" name="psw"><br><br>
+			<input type="radio" name="genero" value="Hombre" checked> Hombre<br>			  
+			<input type="radio" name="genero" value="Mujer"> Mujer<br>
+			<input type="radio" name="genero" value="Otro"> Otro <br><br>
+			<input type="checkbox" name="vehicle1" value="Bike"> Tengo una bicicleta<br>
+			<input type="checkbox" name="vehicle2" value="Car"> Tengo un coche <br><br>
+			<input type="button" onclick="alert('Hello World!')" value="Pulsa aquí!"> <br><br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpiar">
+			<br><br>
+			<b>Nuevos tipos de input de html5:</b> <br>
+			Selecciona tu color favorito: <input type="color" name="favcolor"><br><br>
+			Fecha de cumpleaños: <input type="date" name="bday" min="2000-01-02" max="1979-12-31"><br><br>
+		    Dia y hora de nacimiento: <input type="datetime-local" name="bdaytime"><br><br>
+		    Email: <input type="email" name="email"> <br><br>
+			Selecciona un fichero: <input type="file" name="myFile"><br><br>
+			Mes de nacimiento: <input type="month" name="bdaymonth"><br><br>
+			Número de hijos: <input type="number" name="quantity" min="1" max="5"><br><br>
+			Número de hermanos: <input type="number" name="points" min="0" max="10" step="2" value="2"><br><br>
+			Entrada de tipo range: <input type="range" name="points" min="0" max="10"><br><br>
+			Entrada de tipo search: <input type="search" name="googlesearch"><br><br>
+			Teléfono: <input type="tel" name="usrtel"><br><br>
+			Hora: <input type="time" name="usr_time"><br><br>
+			Página web: <input type="url" name="homepage"><br><br>
+			Semana: <input type="week" name="week_year"><br><br>
+			<br><br>
+			  
+	  
+	</fieldset>
+</form>
+<br>
+<form action="">
+<fieldset>
+  <legend>Datos personales</legend>
+		Introduce tu nombre: <br>
+		<input name="nombre" type="text">
+	<input type="submit" value="enviar">
+</fieldset>
+</form>
+<p>HTML5 ha añadido otros tipos de input:</p>
+<ul>
+  <li>color</li>
+  <li>date</li>
+  <li>datetime-local</li>
+  <li>email</li>
+  <li>month</li>
+  <li>number</li>
+  <li>range</li>
+  <li>search</li>
+  <li>tel</li>
+  <li>time</li>
+  <li>url</li>
+  <li>week</li>
+</ul>
+<br>
+
+<hr>
+<h2>Elemento &lt;select&gt;</h2>
+<p>El elemento &lt;select&gt; define una <strong>lista desplegable</strong>:</p>
+<p>&lt;select name="cars"&gt;<br>
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+    &lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+    &lt;option value="fiat" selected&gt;Fiat&lt;/option&gt;<br>
+    &lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+&lt;/select&gt;</p>
+<form action="">
+	<fieldset>
+	<legend>Marcas de coche</legend>
+		Elige una marca: <br>
+	  <select name="coches" size="3" multiple>
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="fiat" selected>Fiat</option>
+		  <option value="audi">Audi</option>
+	</select>
+	<br><br>
+	</fieldset>
+</form>
+<p>El elemento &lt;option&gt; define una opción que puede seleccionarse.</p>
+<p>Por defecto está seleccionado el primer item de la lista. Para predeterminar una opción, utilizar el atributo "selected"</p>
+<p>Utilizar el atributo "size" para especificar el numero de opciones visibles:</p>
+<p>Utilizar el atributo "multiple" para poder seleccionar más de una opción:</p>
+
+<h2>Elemento &lt;textarea&gt;</h2>
+<p>El elemento &lt;textarea&gt; define un campo multilínea (<strong>área de texto</strong>)</p>
+<p>rows: atributo para definir el número de líneas visibles del área de texto.</p>
+<p>cols: atributo para definir el número de columnas visibles del área de texto.</p>
+<p>En lugar de rows y cols se puede usar css (width, height) para definir el tamaño.</p>
+<p>
+  <textarea name="mensaje" rows="10" cols="50">
+Ejemplo de area de texto de 10 filas y 50 columnas visibles.
+  </textarea>
+</p>
+<h2>Elemento &lt;button&gt;</h2>
+<p>&lt;button&gt; define un <strong>button</strong> con posibilidad de click:</p>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<h2>Elemento HTML5 &lt;datalist&gt;</h2>
+<p>&lt;datalist&gt; especifica una lista de opciones pre-definida para el elemento &lt;input&gt;.</p>
+<p>Los usuarios ven una lista desplegable de opciones predefinidas de datos.</p>
+<p>La lista de atributos del elemento &lt;input&gt;, debe de referise al atributo id del elemento &lt;datalist&gt;.</p>
+<p>ejemplo: </p>
+<form action="/action_page.php">
+  Lista de navegadores: <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist> 
+</form>
+<hr>
+<h2>Elemento HTML5 &lt;output&gt;</h2>
+<p>El elemento &lt;output&gt; representa el resultado de un cálculo.</p>
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit" value="enviar">
+</form>
+<p>&nbsp;</p>
+
+</body>
+</html>
