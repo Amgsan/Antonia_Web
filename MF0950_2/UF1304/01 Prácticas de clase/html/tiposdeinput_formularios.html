@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Elementos de un formulario</title>
+<style>
+	body{
+		width: 90%;
+		font-size: 1em;
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		margin: 1% auto;
+	}	
+	h1, h2 {color:red;}
+	fieldset {padding: 10px;background-color: antiquewhite;}
+</style>
+</head>
+<body>
+
+<h1>Tipos de &lt;input&gt;</h1>
+<p>El elemento &lt;input&gt; puede mostrarse de múltiples formas, dependiendo del tipo de atributo.</p>
+<p>Si se omite el atributo type, el valor por defecto es type: "text".</p>
+<p><b>Tipos de input Type estándar:</b></p>
+<ul>
+  <li>&lt;input type="text"&gt;</li>
+  <li>&lt;input type="password"&gt;</li>
+  <li>&lt;input type="submit"&gt;</li>   
+  <li>&lt;input type="reset"&gt;</li>   
+  <li>&lt;input type="radio"&gt;</li>   
+  <li>&lt;input type="checkbox"&gt;</li>   
+  <li>&lt;input type="button"&gt;</li>
+</ul>
+<p><b>Tipos de input Type añadidos por HTML5:</b></p>
+<ul> 
+  <li>&lt;input type="color"&gt; - compatible en todos los navegadores</li>
+  <li>&lt;input type="number"&gt; - compatible en todos los navegadores</li>  
+  <li>&lt;input type="file"&gt; - compatible en todos los navegadores</li>  
+  <li>&lt;input type="date"&gt;</li>
+  <li>&lt;input type="datetime-local"&gt;</li>
+  <li>&lt;input type="email"&gt;</li>
+  <li>&lt;input type="hidden"&gt;</li>
+  <li>&lt;input type="image"&gt;</li>
+  <li>&lt;input type="month"&gt;</li>
+  <li>&lt;input type="range"&gt;</li>
+  <li>&lt;input type="search"&gt;</li>
+  <li>&lt;input type="tel"&gt;</li>
+  <li>&lt;input type="time"&gt;</li>
+  <li>&lt;input type="url"&gt;</li>
+  <li>&lt;input type="week"&gt;</li>
+</ul>
+<br>
+<form action="" method="get" name="formulario1" accept-charset="UTF-8" autocomplete="off" novalidate target="_blank">
+  <fieldset>
+ 		<legend>Datos personales:</legend>
+ 			<br>
+			<label for="nombre">Nombre </label>
+			<input type="text" name="nombre" id="nombre" value="" autocomplete="on"><br><br>
+			<label for="apellido">Apellido </label><input type="text" name="apellido" id="apellido" value=""><br><br>
+			<label for="password">Password </label>
+			<input type="password" name="psw" id="password"><br><br>
+			Tipo radio: <br>
+			<input type="radio" name="genero" value="Hombre" checked> Hombre<br>			  
+			<input type="radio" name="genero" value="Mujer"> Mujer<br>
+			<input type="radio" name="genero" value="Otro"> Otro <br><br>
+			Tipo checkbox: <br><br>
+			<input type="checkbox" name="vehicle1" value="Bike"> Tengo una bicicleta<br>
+			<input type="checkbox" name="vehicle2" value="Car"> Tengo un coche <br><br>
+			Tipo button: <input type="button" onclick="alert('Hello World!')" value="Pulsa aquí!"> <br><br>
+			Tipo submit: <input type="submit" value="Enviar">
+			Tipo reset: <input type="reset" value="Limpiar">
+			<br><br>
+			<b>Nuevos tipos de input de html5:</b> <br><br>
+			Selecciona tu color favorito: <input type="color" name="favcolor"><br><br>
+			Fecha de cumpleaños: <input type="date" name="bday" min="2000-01-02" max="1979-12-31"><br><br>
+		    Dia y hora de nacimiento: <input type="datetime-local" name="bdaytime"><br><br>
+		    Email: <input type="email" name="email"> <br><br>
+		    <input type="hidden" name="idcliente" id="idcliente" value="4567">
+			Selecciona un fichero: <input type="file" name="mifichero"><br><br>
+			Mes de nacimiento: <input type="month" name="bdaymonth"><br><br>
+			Número de hijos: <input type="number" name="quantity" min="1" max="5"><br><br>
+			Número de hermanos: <input type="number" name="points" min="0" max="10" step="2" value="2"><br><br>
+			Entrada de tipo range: <input type="range" name="points" min="0" max="10"><br><br>
+			Entrada de tipo search: <input type="search" name="q"><input type="submit" value="Buscar" formaction="https://www.google.com/search?"><br><br>
+			Teléfono: <input type="tel" name="usrtel"><br><br>
+			Hora: <input type="time" name="usr_time"><br><br>
+			Página web: <input type="url" name="homepage"><br><br>
+			Semana: <input type="week" name="week_year"><br><br> 
+  </fieldset>
+</form>
+<br>
+<p>HTML5 ha añadido otros tipos de input:</p>
+<ul>
+  <li>color</li>
+  <li>date</li>
+  <li>datetime-local</li>
+  <li>email</li>
+  <li>month</li>
+  <li>number</li>
+  <li>range</li>
+  <li>search</li>
+  <li>tel</li>
+  <li>time</li>
+  <li>url</li>
+  <li>week</li>
+</ul>
+<h2><b>Atributos para el elemento input</b></h2>
+<p><b>- Value</b>: Indica el valor inicial del campo</p>
+<p><b>- Readonly</b>: campo de solo lectura</p>
+<p><b>- Disabled</b>: desactivado</p>
+<p><b>- Size</b>: tamaño del campo en caracteres</p>
+<p><b>- Maxlength</b>: tamaño máximo permitido en caracteres. No avisa al usuario si escribe caracteres de más. Para avisar habría que hacerlo con javascript.</p>
+<p>HTML5 ha añadido otros atributos para el elemento &lt;input&gt;:</p>
+<ul>
+  <li>autocomplete: se puede poner a nivel de todo el formulario, o en los input de los tipos: text, search, url, tel, email, password, datepickers, range, and color</li>
+  <li>autofocus: indica el campo que tiene el foco al cargar la página</li>
+  <li>form: para indicar fuera del formulario a que formulario pertenece un campo. Hay que darle un id al formulario para poder referenciarlo</li>
+  <li>formaction: indica la url del fichero que procesará el campo de entrada cuando se envíe el formulario. Sobreescribe el atributo action del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li>formenctype: indica el tipo de codificación a utilizar al enviar el formulario. Sólo se usa con el método post. Sobreescribe el atributo enctype del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li>formmethod: indica el método HTTP para enviar los datos del formulario.Sobreescribe el atributo method del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li>formnovalidate: sobreescribe el atributo novalidate del formulario. Se utiliza en los campos de tipo submit.</li>
+  <li>formtarget: Indica donde sacar la respuesta recibida una vez enviado el formulario. Sobreescribe el atributo target del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li>height and width: para imágenes</li>
+  <li>list: para elementos datalist</li>
+  <li>min and max: para input de tipo: number, range, date, datetime-local, month, time and week</li>
+  <li>multiple: indica que el usuario puede indicar más de un valor</li>
+  <li>pattern (regexp): patrón de entrada de datos. Se usa en tipos: text, search, url, tel, email, and password.</li>
+  <li>placeholder: indica el valor esperado del campo. Se usa en los tipos: text, search, url, tel, email, and password.</li>
+  <li>required</li>
+  <li>step: indica los intervalos de un elemento de entrada. Se usa con tipos: number, range, date, datetime-local, month, time and week.</li>
+</ul>
+<p>y atributos para el elemento &lt;form&gt;:</p>
+<ul>
+  <li>autocomplete</li>
+  <li>novalidate</li>
+</ul>
+<p>Ejemplos:</p>
+<form action="/action_page1.php" method="post" autocomplete="on" id="formulario1" novalidate enctype="text/plain" target="_blank">
+ <fieldset>
+  	<legend>Datos personales</legend><br>
+	  Nombre: <input type="text" name="Nombre" value="John" size="50" readonly disabled><br><br>
+	  Dirección: <input type="text" name="dir" value="" size="100" maxlength="150" autofocus placeholder="Dirección habitual"><br><br>
+	  Edad: <input type="number" name="edad" step="5" min="0" max="100"><br><br>
+	  E-mail: <input type="email" name="email" autocomplete="off" required><br><br>
+	  Imagen: <input type="image" src="../img/iconos/auricular-phone.png" alt="enviar" width="40" height="40"><br><br>
+	  Seleccionar ficheros: <input type="file" name="img" multiple><br><br>
+	  Código postal: <input type="text" name="cp" pattern="[0-9]{5}" title="Codigo postal de 5 números">
+	  <input type="submit" value="Enviar">
+	  <input type="submit" formaction="/action_page2.php" value="Enviar como administrador"><br><br>
+	  <input type="submit" formenctype="multipart/form-data" value="Enviar con encriptado Multipart/form-data">
+	  <input type="submit" formmethod="get" value="Enviar usando GET"><br><br>
+	  <input type="submit" formnovalidate value="Enviar sin validacion"><br><br>
+	  <input type="submit" formtarget="_parent"  value="Enviar a la ventana padre">
+  </fieldset>
+</form>
+<br><br>
+<p>Campo del formulario fuera del formulario:</p>
+Ciudad: <input type="text" name="ciudad" form="formulario1">
+
+</body>
+</html>
+
+
