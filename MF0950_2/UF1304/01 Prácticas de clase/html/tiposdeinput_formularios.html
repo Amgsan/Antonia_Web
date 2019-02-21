@@ -12,6 +12,19 @@
 	}	
 	h1, h2 {color:red;}
 	fieldset {padding: 10px;background-color: antiquewhite;}
+	input[type=text] {
+		width: 100%;
+		background-color:rgba(221,221,90,1.00);
+		height: 20px;
+	}
+	input[type=submit] {
+		background-color:blue;
+		color: white;
+		border-radius: 4px;
+		padding: 10px;
+		margin: 5px;
+	}
+
 </style>
 </head>
 <body>
@@ -33,12 +46,12 @@
 <ul> 
   <li>&lt;input type="color"&gt; - compatible en todos los navegadores</li>
   <li>&lt;input type="number"&gt; - compatible en todos los navegadores</li>  
-  <li>&lt;input type="file"&gt; - compatible en todos los navegadores</li>  
+  <li>&lt;input type="file"&gt; - compatible en todos los navegadores</li> 
+  <li>&lt;input type="hidden"&gt; - compatible en todos los navegadores</li>
+  <li>&lt;input type="image"&gt; - compatible en todos los navegadores</li>   
   <li>&lt;input type="date"&gt;</li>
   <li>&lt;input type="datetime-local"&gt;</li>
   <li>&lt;input type="email"&gt;</li>
-  <li>&lt;input type="hidden"&gt;</li>
-  <li>&lt;input type="image"&gt;</li>
   <li>&lt;input type="month"&gt;</li>
   <li>&lt;input type="range"&gt;</li>
   <li>&lt;input type="search"&gt;</li>
@@ -48,7 +61,7 @@
   <li>&lt;input type="week"&gt;</li>
 </ul>
 <br>
-<form action="" method="get" name="formulario1" accept-charset="UTF-8" autocomplete="off" novalidate target="_blank">
+<form action="" method="get" name="formulario1" accept-charset="UTF-8" autocomplete="off" target="_blank">
   <fieldset>
  		<legend>Datos personales:</legend>
  			<br>
@@ -69,39 +82,23 @@
 			Tipo reset: <input type="reset" value="Limpiar">
 			<br><br>
 			<b>Nuevos tipos de input de html5:</b> <br><br>
-			Selecciona tu color favorito: <input type="color" name="favcolor"><br><br>
-			Fecha de cumpleaños: <input type="date" name="bday" min="2000-01-02" max="1979-12-31"><br><br>
-		    Dia y hora de nacimiento: <input type="datetime-local" name="bdaytime"><br><br>
-		    Email: <input type="email" name="email"> <br><br>
+			Entrada tipo color: <input type="color" name="favcolor"><br><br>
+			Entrada tipo date: <input type="date" name="bday" min="2000-01-02" max="1979-12-31"><br><br>
+		    Entrada tipo datetime-local: <input type="datetime-local" name="bdaytime"><br><br>
+		    Entrada tipo email: <input type="email" name="email"> <br><br>
 		    <input type="hidden" name="idcliente" id="idcliente" value="4567">
-			Selecciona un fichero: <input type="file" name="mifichero"><br><br>
-			Mes de nacimiento: <input type="month" name="bdaymonth"><br><br>
-			Número de hijos: <input type="number" name="quantity" min="1" max="5"><br><br>
-			Número de hermanos: <input type="number" name="points" min="0" max="10" step="2" value="2"><br><br>
+			Entrada tipo file: <input type="file" name="mifichero"><br><br>
+			Entrada tipo month: <input type="month" name="bdaymonth"><br><br>
+			Entrada tipo number, con min/max: <input type="number" name="quantity" min="1" max="5"><br><br>
+			Entrada tipo number, con min/max, step y valor de inicio: <input type="number" name="points" min="0" max="10" step="2" value="2"><br><br>
 			Entrada de tipo range: <input type="range" name="points" min="0" max="10"><br><br>
 			Entrada de tipo search: <input type="search" name="q"><input type="submit" value="Buscar" formaction="https://www.google.com/search?"><br><br>
-			Teléfono: <input type="tel" name="usrtel"><br><br>
-			Hora: <input type="time" name="usr_time"><br><br>
-			Página web: <input type="url" name="homepage"><br><br>
-			Semana: <input type="week" name="week_year"><br><br> 
+			Entrada tipo tel: <input type="tel" name="usrtel"><br><br>
+			Entrada tipo time: <input type="time" name="usr_time"><br><br>
+			Entrada tipo url: <input type="url" name="homepage"><br><br>
+			Entrada tipo week: <input type="week" name="week_year"><br><br> 
   </fieldset>
 </form>
-<br>
-<p>HTML5 ha añadido otros tipos de input:</p>
-<ul>
-  <li>color</li>
-  <li>date</li>
-  <li>datetime-local</li>
-  <li>email</li>
-  <li>month</li>
-  <li>number</li>
-  <li>range</li>
-  <li>search</li>
-  <li>tel</li>
-  <li>time</li>
-  <li>url</li>
-  <li>week</li>
-</ul>
 <h2><b>Atributos para el elemento input</b></h2>
 <p><b>- Value</b>: Indica el valor inicial del campo</p>
 <p><b>- Readonly</b>: campo de solo lectura</p>
@@ -110,23 +107,24 @@
 <p><b>- Maxlength</b>: tamaño máximo permitido en caracteres. No avisa al usuario si escribe caracteres de más. Para avisar habría que hacerlo con javascript.</p>
 <p>HTML5 ha añadido otros atributos para el elemento &lt;input&gt;:</p>
 <ul>
-  <li>autocomplete: se puede poner a nivel de todo el formulario, o en los input de los tipos: text, search, url, tel, email, password, datepickers, range, and color</li>
-  <li>autofocus: indica el campo que tiene el foco al cargar la página</li>
-  <li>form: para indicar fuera del formulario a que formulario pertenece un campo. Hay que darle un id al formulario para poder referenciarlo</li>
-  <li>formaction: indica la url del fichero que procesará el campo de entrada cuando se envíe el formulario. Sobreescribe el atributo action del formulario. Se utiliza en los campos de tipo submit e image.</li>
-  <li>formenctype: indica el tipo de codificación a utilizar al enviar el formulario. Sólo se usa con el método post. Sobreescribe el atributo enctype del formulario. Se utiliza en los campos de tipo submit e image.</li>
-  <li>formmethod: indica el método HTTP para enviar los datos del formulario.Sobreescribe el atributo method del formulario. Se utiliza en los campos de tipo submit e image.</li>
-  <li>formnovalidate: sobreescribe el atributo novalidate del formulario. Se utiliza en los campos de tipo submit.</li>
-  <li>formtarget: Indica donde sacar la respuesta recibida una vez enviado el formulario. Sobreescribe el atributo target del formulario. Se utiliza en los campos de tipo submit e image.</li>
-  <li>height and width: para imágenes</li>
-  <li>list: para elementos datalist</li>
-  <li>min and max: para input de tipo: number, range, date, datetime-local, month, time and week</li>
-  <li>multiple: indica que el usuario puede indicar más de un valor</li>
-  <li>pattern (regexp): patrón de entrada de datos. Se usa en tipos: text, search, url, tel, email, and password.</li>
-  <li>placeholder: indica el valor esperado del campo. Se usa en los tipos: text, search, url, tel, email, and password.</li>
-  <li>required</li>
-  <li>step: indica los intervalos de un elemento de entrada. Se usa con tipos: number, range, date, datetime-local, month, time and week.</li>
+  <li><b>autocomplete</b>: se puede poner a nivel de todo el formulario, o en los input de los tipos: text, search, url, tel, email, password, datepickers, range, and color</li>
+  <li><b>autofocus</b>: indica el campo que tiene el foco al cargar la página</li>
+  <li><b>form</b>: para indicar fuera del formulario a que formulario pertenece un campo. Hay que darle un id al formulario para poder referenciarlo</li>
+  <li><b>formaction</b>: indica la url del fichero que procesará el campo de entrada cuando se envíe el formulario. Sobreescribe el atributo action del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li><b>formenctype</b>: indica el tipo de codificación a utilizar al enviar el formulario. Sólo se usa con el método post. Sobreescribe el atributo enctype del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li><b>formmethod</b>: indica el método HTTP para enviar los datos del formulario.Sobreescribe el atributo method del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li><b>formnovalidate</b>: sobreescribe el atributo novalidate del formulario. Se utiliza en los campos de tipo submit.</li>
+  <li><b>formtarget</b>: Indica donde sacar la respuesta recibida una vez enviado el formulario. Sobreescribe el atributo target del formulario. Se utiliza en los campos de tipo submit e image.</li>
+  <li><b>height and width</b>: para imágenes</li>
+  <li><b>list</b>: para elementos datalist</li>
+  <li><b>min and max</b>: para input de tipo: number, range, date, datetime-local, month, time and week</li>
+  <li><b>multiple</b>: indica que el usuario puede indicar más de un valor</li>
+  <li><b>pattern</b> (regexp): patrón de entrada de datos. Se usa en tipos: text, search, url, tel, email, and password.</li>
+  <li><b>placeholder</b>: indica el valor esperado del campo. Se usa en los tipos: text, search, url, tel, email, and password.</li>
+  <li><b>required</b></li>
+  <li><b>step</b>: indica los intervalos de un elemento de entrada. Se usa con tipos: number, range, date, datetime-local, month, time and week.</li>
 </ul>
+<p>Todos son compatibles con todos los navegadores, excepto los atributos <b>form</b> y <b>list</b></p>
 <p>y atributos para el elemento &lt;form&gt;:</p>
 <ul>
   <li>autocomplete</li>
