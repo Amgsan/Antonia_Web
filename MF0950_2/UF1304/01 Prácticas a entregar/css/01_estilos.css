@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4, h5, h6, ul, li, img, figure, a {
+	margin:0;
+	padding: 0;
+}
+* {box-sizing: border-box;}
+body {
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	width:80%;
+}
+.rojo {color:red;}
+h1 {margin-bottom: 20px;}
+form {
+	width: 40%;
+	margin:auto;
+	border:none;
+}
+fieldset {
+	background-color: #DCDCDC;
+	padding: 15px;
+	border:none;
+}
+input, label, textarea {
+	margin: 10px 0;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="textarea"] {
+	width: 100%;
+	border-radius: 5px;
+	height: 2em;
+}
+input[type="submit"]  {
+	background-color: #20B50F;
+	padding: 8px 10px;
+	border-radius: 5px;
+}

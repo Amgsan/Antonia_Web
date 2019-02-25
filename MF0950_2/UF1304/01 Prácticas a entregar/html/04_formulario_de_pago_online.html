@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+	<title>Formulario de pago on-line</title>
+	<link href="../css/04_estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../img/img.ico" type="image/png">
+	<meta name="description" content="Ejercicio de formularios 04"> 
+	<meta name="author" content="Antonia Garcia"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Dispositivos móviles -->
+</head>
+<body>
+<main>
+
+<form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+	<h1>Formulario de pago</h1>
+	<div id="contprincipal" class="flexcol">
+		<div id="contdatos" class="flexrow">
+			<!-- Datos de usuario -->
+			<div class="datos flexcol">
+				<div class="flexcol">
+					<h2>Dirección de envío</h2>
+					<label for="nombre"><img src="../img/user.png" alt="usuario" class="icondatos">Nombre completo</label>
+					<input type="text" name="usuario" id="nombre" placeholder="  Juan José Gómez Martín" required autofocus>
+					<label for="email"><img src="../img/mail.png" alt="mail" class="icondatos">Email</label>
+					<input type="email" name="telefono" id="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="  correo@dominio.com" required>
+					<label for="direc"><img src="../img/contactcard.png" alt="dirección" class="icondatos">Dirección</label>
+					<input type="text" name="direc" id="direc" placeholder="  Avenida de Europa 15" required>
+					<label for="ciudad"><img src="../img/building.png" alt="ciudad" class="icondatos">Ciudad</label>
+					<input type="text" name="ciudad" id="ciudad" placeholder="  Madrid" required>		
+				</div>
+				<div class="flexrow spacearound campos2">
+					<div class="width50">
+						<label for="estado">Estado</label>
+						<input type="text" name="estado" id="estado" placeholder="  ES" required>
+					</div>
+					<div class="width50">
+						<label for="cp">Código postal</label>
+						<input type="text" name="cp" id="cp" placeholder="  28123" required>	
+					</div>
+				</div>			
+			</div>	
+			<!-- Métodos de pago -->			
+			<div class="pago flexcol">
+				<div class="flexcol">
+					<h2>Pago</h2>
+					<label for="tarjetas">Selecciona una tarjeta</label>
+					<div class="flexrow" id="divtarjetas">
+						<input type="radio" name="tarjeta" value="visa"><img src="../img/visa.png" alt="visa" class="icontarjeta">
+						<input type="radio" name="tarjeta" value="mastercard"><img src="../img/mastercard.png" alt="master"  class="icontarjeta">
+						<input type="radio" name="tarjeta" value="amex"><img src="../img/american-express.png" alt="amex"  class="icontarjeta">
+						<input type="radio" name="tarjeta" value="discover"><img src="../img/discover.png" alt="discover"  class="icontarjeta">
+					</div>
+					<label for="titular">Titular de la tarjeta</label>
+					<input type="text" name="titular" id="titular" placeholder="  Juan José Gómez Martín" required>		
+					<label for="numtarjeta">Número de tarjeta de crédito</label>
+					<input type="text" name="numtarjeta" id="numtarjeta" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="  1111-2222-3333-4444" required>	
+					<label for="mestarjeta">Exp mes</label>
+					<select name="mestarjeta" id="mestarjeta">
+						<option value="ene">Enero</option>
+						<option value="feb">Febrero</option>
+						<option value="mar">Marzo</option>
+						<option value="abr">Abril</option>
+						<option value="may">Mayo</option>
+						<option value="jun">Junio</option>
+						<option value="jul">Julio</option>
+						<option value="ago">Agosto</option>
+						<option value="sept" selected>Septiembre</option>
+						<option value="oct">Octubre</option>
+						<option value="nov">Noviembre</option>
+						<option value="dic">Diciembre</option>
+					</select>	
+					<div class="flexrow  spacearound campos2">
+						<div class="width50">											
+							<label for="aniotarjeta">Exp año</label>	
+							<select name="anio" id="aniotarjeta" min="1950" max="2020">
+								<option value="2019">2019</option>
+								<option value="2020" selected>2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>
+							</select>
+						</div>
+						<div class="width50">
+							<label for="cvv">CVV</label>
+							<input type="text" name="cvv" id="cvv" pattern="[0-9]{3}" placeholder="  352" required>
+						</div>
+					</div>		
+				</div>
+			</div>					
+		</div>
+		<div class="flexcol">
+			<div>
+				<input type="checkbox" name="condiciones" value="acepta" required checked> Acepto los términos y <a href="#">condiciones de privacidad</a>
+			</div>
+			<br>
+			<div>
+				<input type="submit" value="Continuar con el pago" class="colorverde">
+			</div>
+		</div>	
+	</div>
+</form>
+</main>
+</body>
+</html>

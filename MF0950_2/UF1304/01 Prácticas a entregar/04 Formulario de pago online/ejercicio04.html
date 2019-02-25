@@ -1,0 +1,233 @@
+<!doctype html> <!-- Declaración del tipo de documento -->
+<html lang="es-ES"> <!-- Inicio de etiqueta raíz de un documento HMTL -->
+<head> <!-- Inicio de etiqueta de cabecera del documento HTML -->
+<meta charset="utf-8"> <!-- Tipo de codificación de caracteres -->
+<title>Lenguaje HTML</title>  <!-- Título del documento HTML -->
+<!-- <base href="http://www.mipaginaweb.com " target="_blank">   Base URL para enlaces -->
+<meta name="description" content="Curso de diseño y confección de páginas web"> <!-- Descripción -->
+<meta name="keywords" content="HTML5, CSS3, JavaScript"> <!-- Palabras clave -->
+<meta name="author" content="Nombre y apellidos"> <!-- Autor -->
+<meta name="generator" content="Editor de código HTML"> <!--Aplicación utilizada -->
+<meta name="copyright" content="Propiedad Intelectual"> <!-- Propiedad intelectual -->
+<meta name="robots" content="index, follow"> <!-- Comportamiento de los buscadores -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Dispositivos móviles -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+	
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 0px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Formulario de pago</h1>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Dirección de Envio</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nombre completo</label>
+            <input type="text" id="fname" name="firstname" placeholder="Juan José Gómez Martín">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="correo@dominio.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
+            <input type="text" id="adr" name="address" placeholder="Avenida Europa, 15">
+            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+            <input type="text" id="city" name="city" placeholder="Madrid">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Estado</label>
+                <input type="text" id="state" name="state" placeholder="ES">
+              </div>
+              <div class="col-50">
+                <label for="zip">Código Postal</label>
+                <input type="text" id="zip" name="zip" placeholder="28123">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Pago</h3>
+            <label for="fname">Selecciona una tarjeta</label>
+            <div class="icon-container" style="margin-bottom: 7px;">
+             <input type="radio"><img src="visa.png" alt="" style="vertical-align: middle">
+             <input type="radio"><img src="mastercard.png" alt=""  style="vertical-align: middle">
+             <input type="radio"><img src="american-express.png" alt=""  style="vertical-align: middle">
+             <input type="radio"><img src="discover.png" alt=""  style="vertical-align: middle">
+            </div>
+            <label for="cname">Titular de la tarjeta</label>
+            <input type="text" id="cname" name="cardname" placeholder="Juan José Gómez Martín">
+            <label for="ccnum">Número de tarjeta de crédito</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Mes</label>
+            <select>
+            <option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9" selected="selected">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+            </select>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Año</label>
+            <select>
+              <option value="1">2010</option>
+              <option value="2">2011</option>
+              <option value="3">2012</option>
+              <option value="4">2013</option>
+              <option value="5">2014</option>
+              <option value="6">2015</option>
+              <option value="7">2016</option>
+              <option value="8">2017</option>
+              <option value="9">2018</option>
+              <option value="10">2019</option>
+              <option value="11" selected="selected">2020</option>
+              <option value="12">2021</option>
+            </select>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Acepto los términos y <a href="#">condiciones de privacidad.
+        </label>
+        <input type="submit" value="Continuar con el pago" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Carro <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Producto 1</a> <span class="price">15€</span></p>
+      <p><a href="#">Producto 2</a> <span class="price">5€</span></p>
+      <p><a href="#">Producto 3</a> <span class="price">8€</span></p>
+      <p><a href="#">Producto 4</a> <span class="price">2€</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>30€</b></span></p>
+    </div>
+  </div>
+</div>
+
+
+</body> <!-- Fin de etiqueta de cuerpo del documento HTML -->
+</html> <!-- Fin de etiqueta raíz de un documento HMTL -->
+
+

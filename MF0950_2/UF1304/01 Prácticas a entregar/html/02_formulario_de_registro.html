@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+	<title>Formulario de registro</title>
+	<link href="../css/02_estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../img/img.ico" type="image/png">
+	<meta name="description" content="Ejercicio de formularios 02"> 
+	<meta name="author" content="Antonia Garcia"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Dispositivos móviles -->
+</head>
+<body>
+<main>
+	<br>
+	<form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+		<fieldset>
+			<div class="datosusuario">
+				<img src="../img/iconos/cancel.png" alt="cerrar" class="cerrar">
+				<div class="usuario">
+					<img src="../img/img_avatar.png" alt="avatar" class="avatar">
+				</div>
+				<br>
+				<label for="usuario1"><b>Usuario</b></label><br>
+				<input type="text" name="usuario" id="usuario1" placeholder="  Entrar usuario" required autofocus>
+				<label for="passw1"><b>Contraseña</b></label><br>
+				<input type="password" name="passw" id="passw1" placeholder="  Entrar contraseña" required><br><br>
+				<input type="submit" value="Iniciar sesión" class="width100 colorverde"><br>
+				<input type="checkbox" name="recordar" value="recordar" checked> Recordarme<br>
+			</div>
+			<div class="pieregistro">
+					<input type="submit" value="Registrarse" class="colornaranja fleft">	
+					<p class="fright centrado" style="vertical-align:1.2em;">¿Has olvidado la <a href="#">contraseña</a>?</p>	
+			</div>	
+		</fieldset>
+	</form>
+	<br>
+		<form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+		<fieldset>
+			<div class="datosusuario">
+				<img src="../img/iconos/cancel.png" alt="cerrar" class="cerrar">
+				<div class="usuario">
+					<img src="../img/img_avatar2.png" alt="avatar" class="avatar">
+				</div>
+				<br>
+				<label for="usuario2"><b>Usuario</b></label><br>
+				<input type="text" name="usuario" id="usuario2" placeholder="  Entrar usuario" required autofocus>
+				<label for="passw2"><b>Contraseña</b></label><br>
+				<input type="password" name="passw" id="passw2" placeholder="  Entrar contraseña" required><br><br>
+				<input type="submit" value="Iniciar sesión" class="width100 colorverde"><br>
+				<input type="checkbox" name="recordar" value="recordar" checked> Recordarme<br>
+			</div>
+			<div class="pieregistro">
+					<input type="submit" value="Registrarse" class="colornaranja fleft">	
+					<p class="fright centrado" style="vertical-align:1.2em;">¿Has olvidado la <a href="#">contraseña</a>?</p>	
+			</div>	
+		</fieldset>
+	</form>
+</main>
+</body>
+</html>

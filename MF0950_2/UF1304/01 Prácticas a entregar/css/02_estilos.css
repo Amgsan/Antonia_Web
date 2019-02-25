@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4, h5, h6, ul, li, img, figure, a, label, textarea, input, form, fieldset {
+	margin:0;
+	padding: 0;
+}
+* {box-sizing: border-box;}
+body {
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	width:80%;
+}
+
+form {
+	width: 40%;
+	margin:auto;
+	border:1px solid black;
+	position: relative;
+}
+fieldset {
+	border:none;
+}
+input, label {
+	margin: 10px 0;
+}
+input[type="text"], input[type="password"] {
+	width: 100%;
+	border-radius: 5px;
+	height: 2em;
+}
+input[type="submit"]  {
+	padding: 8px 10px;
+	border-radius: 5px;
+	color:white;
+}
+.width100 {width: 100%}
+.colorverde {background-color:#20B50F;}
+.colornaranja {background-color:#F0770E;}
+.cerrar {
+	position: absolute;
+	top:2%;
+	right:5%;
+}
+.avatar {
+	width:40%;
+	border-radius: 50%;	
+}
+.usuario {
+	text-align: center;
+}
+.datosusuario {
+	padding: 10px 15px;
+}
+.pieregistro {
+	padding: 10px;
+	background-color: #ECECEC;
+	width:100%;
+	overflow: hidden;
+}
+.fleft {float: left;}
+.fright {float: right;}
+.centrado {padding: 15px 5px;}

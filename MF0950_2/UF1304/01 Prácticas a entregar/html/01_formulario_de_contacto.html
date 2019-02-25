@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+	<title>Formulario de contacto</title>
+	<link href="../css/01_estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../img/img.ico" type="image/png">
+	<meta name="description" content="Ejercicio de formularios 01"> 
+	<meta name="author" content="Antonia Garcia"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Dispositivos móviles -->
+</head>
+<body>
+<main>
+
+	<br>
+	<form action="" method="get" autocomplete="off" enctype="multipart/form-data">
+		<h1>Formulario de contacto</h1>
+		<fieldset>
+			<label for="nombre">Nombre<span class="rojo">*</span></label><br>
+			<input type="text" name="nombre" id="nombre" placeholder="Tu nombre.." required autofocus>
+			<label for="apellidos">Apellidos<span class="rojo">*</span></label><br>
+			<input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos.." required>	
+			<label for="telefono">Teléfono<span class="rojo">*</span></label><br>
+			<input type="tel" name="telefono" id="telefono" pattern="[0-9]{1-10}" placeholder="Tu teléfono.." required>			
+			<label for="email">Correo electrónico<span class="rojo">*</span></label><br>
+			<input type="email" name="telefono" id="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Tu correo electrónico.." required>	
+			<label for="consulta">Consulta<span class="rojo">*</span></label><br>
+			<textarea name="consulta" id="consulta" cols="100%" rows="10" placeholder="Tu consulta.."></textarea><br>
+			<input type="checkbox" name="condiciones" value="acepta" required> Acepto los términos y <a href="#">condiciones de privacidad</a><br><br>
+			<input type="submit" value="Enviar">
+		</fieldset>
+	</form>
+</main>
+</body>
+</html>
